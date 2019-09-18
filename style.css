@@ -1,4 +1,4 @@
-h1.fancy-header {
-    color: rebeccapurple;
+.fancy-header {
+    color: mediumpurple;
     text-decoration: underline;
 }
