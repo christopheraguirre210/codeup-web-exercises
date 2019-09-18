@@ -24,35 +24,37 @@
         <form method="POST" action="http://request-inspector.glitch.me/">
             <p>
                 <label for="Bio:">Bio:</label>
-                <textarea id="Bio:" name="Bio:" placeholder="Describe yourself in a few short words."></textarea>
+                <textarea id="Bio:" name="Bio:" placeholder="Describe yourself in a few short words." rows="10" cols="40"></textarea>
             </p>
             <p>
                 <button type="submit">Send</button>
             </p>
         </form>
+        <hr>
         <form method="POST" action="http://request-inspector.glitch.me/">
             <h3>Please pick one of the answers below.</h3>
             <p>How did you hear about us?</p>
             <label>
-                <input type="radio" name="q1" value="Billboard">
+                <input type="radio" name="question_1" value="Billboard">
                 Billboard
             </label>
             <label>
-                <input type="radio" name="q1" value="Radio Advertisement">
+                <input type="radio" name="question_1" value="Radio Advertisement">
                 Radio Advertisement
             </label>
             <label>
-                <input type="radio" name="q1" value="Internet Advertisement">
+                <input type="radio" name="question_1" value="Internet Advertisement">
                 Internet Advertisement
             </label>
             <label>
-                <input type="radio" name="q1" value="Other">
+                <input type="radio" name="question_1" value="Other">
                 Other
             </label>
             <p>
                 <button type="submit">Submit</button>
             </p>
         </form>
+        <hr>
         <form method="POST" action="http://request-inspector.glitch.me/">
             <h3>What browser are you using to view the site?</h3>
             <label for="Browser">Select Web Browser:</label>
