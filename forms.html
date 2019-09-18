@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register With Us</title>
+    </head>
+    <body>
+        <h2>User Login</h2>
+        <form method="POST" action="http://request-inspector.glitch.me/">
+            <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Enter Username">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter Password">
+            </p>
+            <p>
+                <button type="submit">Login</button>
+            </p>
+        </form>
+        <hr>
+        <h2>Tell us about yourself.</h2>
+        <form method="POST" action="http://request-inspector.glitch.me/">
+            <p>
+                <label for="Bio:">Bio:</label>
+                <textarea id="Bio:" name="Bio:" placeholder="Describe yourself in a few short words."></textarea>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+        <form method="POST" action="http://request-inspector.glitch.me/">
+            <h3>Please pick one of the answers below.</h3>
+            <p>How did you hear about us?</p>
+            <label>
+                <input type="radio" name="q1" value="Billboard">
+                Billboard
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Radio Advertisement">
+                Radio Advertisement
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Internet Advertisement">
+                Internet Advertisement
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Other">
+                Other
+            </label>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+        <form method="POST" action="http://request-inspector.glitch.me/">
+            <h3>What browser are you using to view the site?</h3>
+            <label for="Browser">Select Web Browser:</label>
+            <select id="Browser" name="Browser">
+                <option>Firefox</option>
+                <option>Chrome</option>
+                <option>Internet Explorer</option>
+                <option>Safari</option>
+            </select>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </body>
+</html>
