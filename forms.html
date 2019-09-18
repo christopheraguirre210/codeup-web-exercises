@@ -8,8 +8,8 @@
         <h2>User Login</h2>
         <form method="POST" action="http://request-inspector.glitch.me/">
             <p>
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text" placeholder="Enter Username">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Enter email">
             </p>
             <p>
                 <label for="password">Password</label>
@@ -25,29 +25,29 @@
             <h3>Please pick one of the answers below.</h3>
             <p>How did you hear about us?</p>
             <label>
-                <input type="radio" name="question_1" value="Billboard">
+                <input type="checkbox" name="question_1" value="Billboard">
                 Billboard
             </label>
             <label>
-                <input type="radio" name="question_1" value="Radio Advertisement">
+                <input type="checkbox" name="question_1" value="Radio Advertisement">
                 Radio Advertisement
             </label>
             <label>
-                <input type="radio" name="question_1" value="Internet Advertisement">
+                <input type="checkbox" name="question_1" value="Internet Advertisement">
                 Internet Advertisement
             </label>
             <label>
-                <input type="radio" name="question_1" value="Other">
+                <input type="checkbox" name="question_1" value="Other">
                 Other
             </label>
         <hr>
             <h3>What browser are you using to view the site?</h3>
             <label for="Browser">Select Web Browser:</label>
             <select id="Browser" name="Browser">
-                <option>Firefox</option>
-                <option selected>Chrome</option>
-                <option>Internet Explorer</option>
-                <option>Safari</option>
+                <option value="firefox">Firefox</option>
+                <option value="chrome" selected>Chrome</option>
+                <option value="internet explorer">Internet Explorer</option>
+                <option value="safari">Safari</option>
             </select>
             <p>
                 <button type="submit">Submit</button>
