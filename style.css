@@ -9,6 +9,7 @@ body {
     background-position: center;
     background-size: cover;
     font-family: 'Titillium Web', sans-serif;
+    text-align: center;
 
 }
 
@@ -17,11 +18,17 @@ text-align: center;
 }
 
 ol {
-    list-style: lower-roman;
+    display: inline-block;
+    list-style: lower-roman inside;
+    padding: 0px;
+    text-align: left;
 }
 
 ul {
-    list-style: square;
+    display: inline-block;
+    list-style: square inside;
+    padding: 0px;
+    text-align: left;
 }
 
 #user-table {
