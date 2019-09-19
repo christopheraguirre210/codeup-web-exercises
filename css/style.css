@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("images/coolpic.png");
+    background-image: url("../images/coolpic.png");
     height: 100%;
     background-position: center;
     background-size: cover;
