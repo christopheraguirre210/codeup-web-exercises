@@ -1,10 +1,34 @@
+#main-header:hover {
+    color: deeppink;
+}
+
+#header-1:hover {
+    color: mediumpurple;
+}
+
+#header-2:hover {
+    color: dodgerblue;
+}
+
+#header-3:hover {
+    color: seagreen;
+}
+
+#vision:hover {
+    color: crimson;
+}
+
+#product:hover {
+    color: orchid;
+}
+
 .fancy-header {
     color: royalblue;
     text-decoration: underline;
 }
 
 body {
-    background-image: url("../images/coolpic.png");
+    background-image: url("../images/cottoncandy.jpeg");
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -31,9 +55,16 @@ ul {
     text-align: left;
 }
 
+hr {
+    border-top: steelblue dashed;
+    border-bottom: orchid dashed;
+}
+
 #user-table {
     margin: 10px auto;
     width: 100%
+    content-box; list-style-position: inside;
+
 }
 
 #user-table th {
