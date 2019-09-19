@@ -1,12 +1,40 @@
 .fancy-header {
-    color: mediumpurple;
+    color: royalblue;
     text-decoration: underline;
 }
 
 body {
-    background-image: url("images/cottoncandy.jpeg");
+    background-image: url("images/coolpic.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+h1 {
+text-align: center;
+}
+
+ul {
+    list-style: square;
+}
+
+#user-table {
+    margin: 10px auto;
+    width: 100%
+}
+
+#user-table th {
+    border-bottom: 1px solid black;
+    padding: 2px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#user-table td {
+    padding: 2px;
+    text-align: center;
+
 }
