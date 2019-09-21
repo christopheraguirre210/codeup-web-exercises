@@ -3,19 +3,6 @@
     text-decoration: underline;
 }
 
-#scene {
-    background-image: url("../images/future.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-
-}
-
-#bottom {
-    background-image: url("../images/tidie.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
 #main-header:hover {
     color: deeppink;
 
@@ -43,10 +30,6 @@
 
 body {
     font-size: large;
-    background-image: url("../images/cottoncandy.jpeg");
-    height: 100%;
-    background-position: center;
-    background-size: cover;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
 
@@ -70,9 +53,24 @@ ul {
     text-align: left;
 }
 
-hr {
-    border-top: steelblue dashed;
-    border-bottom: orchid dashed;
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    font-family: 'Tangerine', cursive;
+    color: bisque;
+    content: "VD";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #333333;
 }
 
 #user-table {
@@ -110,4 +108,13 @@ a:hover {
 
 a:active {
     color: plum;
+}
+
+html {
+    background: url("../images/office-space.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: bisque;
 }
