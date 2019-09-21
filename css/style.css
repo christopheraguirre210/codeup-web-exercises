@@ -1,31 +1,26 @@
-.header {
-    font-family: 'Courgette', cursive;
-    text-decoration: underline;
+html {
+    background: url("../images/office-space.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: bisque;
 }
 
-#main-header:hover {
-    color: deeppink;
-
+a:link {
+    color: blue;
 }
 
-#header-1:hover {
-    color: mediumpurple;
+a:visited {
+    color: steelblue;
 }
 
-#header-2:hover {
-    color: dodgerblue;
+a:hover {
+    color: darkblue;
 }
 
-#header-3:hover {
-    color: darkorange;
-}
-
-#vision:hover {
-    color: crimson;
-}
-
-#product:hover {
-    color: orchid;
+a:active {
+    color: plum;
 }
 
 body {
@@ -36,7 +31,11 @@ body {
 }
 
 h1 {
-text-align: center;
+    text-align: center;
+    font-size: 64px;
+    background: -webkit-linear-gradient(#fff, goldenrod);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 ol {
@@ -73,6 +72,38 @@ hr.style-eight:after {
     background: #333333;
 }
 
+.header {
+    font-family: 'Courgette', cursive;
+    text-decoration: underline;
+}
+
+#main-header:hover {
+    color: deeppink;
+
+}
+
+#header-1:hover {
+    color: mediumpurple;
+}
+
+#header-2:hover {
+    color: dodgerblue;
+}
+
+#header-3:hover {
+    color: darkorange;
+}
+
+#vision:hover {
+    color: crimson;
+}
+
+#product:hover {
+    color: orchid;
+}
+
+
+
 #user-table {
     margin: 10px auto;
     width: 100%
@@ -94,27 +125,70 @@ hr.style-eight:after {
 
 }
 
-a:link {
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-a:visited {
-    color: steelblue;
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(122,150,255,.2);
 }
 
-a:hover {
-    color: aqua;
+nav p {
+    font-family: 'Titillium Web', sans-serif;
+    color: #222;
+    font-size: 24px;
+    line-height: 45px;
+    float: left;
+    padding: 0px 20px;
 }
 
-a:active {
-    color: plum;
+nav ul {
+    float: left;
 }
 
-html {
-    background: url("../images/office-space.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: bisque;
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: arial;
+    color: #222;
+    font-size: 20px;
+    padding: 15px 100px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 350px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 8px 50px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f3f3f3;
+}
+
+nav a:visited {
+    color: #000;
 }
