@@ -58,6 +58,7 @@ a {
 
 .profile-image {
     position: absolute;
+    top: 20em;
 
 }
 
@@ -66,7 +67,7 @@ a {
 }
 
 .profile-details {
-    width: calc(25% - .5em);
+    width: calc(25% - 1em);
     margin: 0em .5em;
     float: left;
 }
@@ -81,7 +82,7 @@ a {
 }
 
 .timeline {
-    width: calc(50% - .5em);
+    width: calc(50% - 1em);
     margin-left: .5em;
     margin-right: .5em;
     margin-bottom: 0;
@@ -90,7 +91,7 @@ a {
 }
 
 .who-to-follow {
-    width: calc(25% - .5em);
+    width: calc(25% - 1em);
     margin-left: .5em;
     margin-right: -1em;
     margin-bottom: 0;
