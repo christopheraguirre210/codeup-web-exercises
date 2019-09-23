@@ -9,9 +9,9 @@ body, html {
 .message {
     border: 1px solid black;
     padding: 1em;
-    margin: 1em;
+    margin: 1em auto;
     border-radius: 5px;
-    width: 95%;
+    width: 85%;
     height: 15px;
 }
 
