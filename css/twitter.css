@@ -83,10 +83,7 @@ a {
 
 .timeline {
     width: calc(50% - 1em);
-    margin-left: .5em;
-    margin-right: .5em;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0 .5em;
     float: left;
 }
 
@@ -106,8 +103,7 @@ a {
 .media {
     width: 100%;
     background-color:white;
-    border-bottom: 1px solid black;
-    border-color:var(--separator-color);
+    border-bottom: 1px solid var(--separator-color);
     padding: .5em;
     overflow: auto;
 }
