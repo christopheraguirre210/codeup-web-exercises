@@ -2,15 +2,53 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 nav {
     background-color: #848487;
     display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    line-height: 55px;
 }
 
 nav a {
     display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    background-color: #3B94D9;
+}
+
+#logo {
+    display: flex;
+    font-size: 3em;
+    padding: .2em 0;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#job {
+    margin-right: auto;
 }
