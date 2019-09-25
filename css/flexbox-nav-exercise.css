@@ -13,6 +13,7 @@ nav {
     justify-content: center;
     width: 100%;
     align-content: center;
+    padding: .25em 0;
 }
 
 nav ul {
@@ -26,7 +27,7 @@ nav ul {
 }
 
 nav ul li {
-    line-height: 55px;
+    line-height: 60px;
 }
 
 nav a {
@@ -35,6 +36,8 @@ nav a {
     color: black;
     font-weight: bold;
     padding: 0 15px;
+    border-radius: 50px;
+
 }
 
 nav a:hover {
@@ -47,6 +50,7 @@ nav a:hover {
     padding: .2em 0;
     position: absolute;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 #job {
