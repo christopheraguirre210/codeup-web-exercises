@@ -4,6 +4,7 @@
 
 nav {
     background-color: #848487;
+    display: flex;
 }
 
 nav ul {
