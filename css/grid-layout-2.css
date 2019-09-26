@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 body {
+    display: flex;
+    justify-content: center;
     text-align: center;
 
 }
@@ -13,12 +15,18 @@ main {
     align-content: center;
     grid-gap: 6px;
     border: 6px white;
+    text-align: start;
 
 }
 
 .layout {
     display: flex;
     justify-content: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px 5px grey;
+    width: 850px;
+    height: 650px;
+    border: 2px solid grey;
 }
 
 .header {

@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 body {
+    display: flex;
     text-align: center;
+    justify-content: center;
 
 }
 
@@ -14,10 +16,17 @@ main {
     grid-gap: 6px;
     border: 6px white;
     border-radius: 50px;
-
+    text-align: start;
 }
 
 .layout {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 15px 15px 10px 5px grey;
+    width: 650px;
+    height: 650px;
+    border: 2px solid grey;
 }
 
 .header {
