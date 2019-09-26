@@ -12,22 +12,20 @@ body {
 
 .wrapper {
     /* TODO: make the wrapper a grid container */
-    display: inline-grid;
+    display: grid;
     /* TODO: define five columns where the middle three columns are 400px and the outer columns fill the remaining space */
-    grid-template-columns: auto 400px 400px 400px auto ;
+    grid-template-columns: 1fr 400px 400px 400px 1fr ;
     /* TODO: add a gap of 1em around all grid items */
     grid-gap: 1em;
     /* no row properties are needed */
     /* TODO: the height of the wrapper should be 100 viewport height units */
     height: 100vh;
-    justify-content: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    align-items: center;
 }
 
 header {
@@ -43,7 +41,7 @@ nav {
 
 main {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     grid-area: 2 / 3 / 3 / 5;
     /* TODO: define the grid area of main such that it takes up the columns 3 and 4 of the second row  */
@@ -54,8 +52,7 @@ main {
 
 header ul {
     display: flex;
-    width: 100%;
-    align-items: center;
+    justify-content: space-between;
     /* TODO: use flex box to horizontally line up all list items */
 }
 
@@ -76,7 +73,7 @@ header a:hover {
 
 .header-background {
     background: purple;
-    grid-row: 1 / 2;
+    grid-area: 1 / 1 / 2 / 6;
     /* TODO: define the grid area of this element to take up the entire first row of the .container grid  */
 }
 
