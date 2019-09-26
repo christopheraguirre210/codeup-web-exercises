@@ -20,12 +20,14 @@ body {
     /* no row properties are needed */
     /* TODO: the height of the wrapper should be 100 viewport height units */
     height: 100vh;
+    justify-content: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 header {
