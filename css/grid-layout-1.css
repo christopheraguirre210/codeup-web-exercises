@@ -24,32 +24,42 @@ main {
     justify-content: center;
     background-color: white;
     box-shadow: 15px 15px 10px 5px grey;
-    width: 650px;
-    height: 650px;
+    width: 625px;
+    height: 625px;
     border: 2px solid grey;
 }
 
 .header {
     background: #FCD800;
     grid-area: 1 / 1 / 3 / 10;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .nav {
     background: #FCD800;
     grid-area: 3 / 1 / 10 / 3;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .article {
     background: #FCD800;
     grid-area: 3 / 3 / 9 / 8;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .ads {
     background: #FCD800;
     grid-area: 3 / 8 / 9 / 10;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .footer {
     background: #FCD800;
     grid-area: 9 / 3 / 10 / 10;
+    padding-top: .5em;
+    padding-left: .5em;
 }

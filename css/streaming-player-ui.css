@@ -52,7 +52,6 @@ main {
 
 header ul {
     display: flex;
-    justify-content: space-between;
     /* TODO: use flex box to horizontally line up all list items */
 }
 
@@ -119,6 +118,7 @@ nav a:hover {
     border-radius: 10px;
     position: relative;
     /* TODO: add a property that causes a transition of the border from lightgrey to near black in .2 seconds */
+    transition: .2s;
 }
 
 .card:hover {

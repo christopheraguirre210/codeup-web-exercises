@@ -24,32 +24,42 @@ main {
     justify-content: center;
     background-color: white;
     box-shadow: 15px 15px 10px 5px grey;
-    width: 850px;
-    height: 650px;
+    width: 830px;
+    height: 630px;
     border: 2px solid grey;
 }
 
 .header {
     background: #9BCE0A;
     grid-area: 1 / 1 / 2 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .nav {
     background: #9BCE0A;
     grid-area: 2 / 1 / 9 / 4;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .article {
     background: #9BCE0A;
     grid-area: 2 / 4 / 7 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .ads {
     background: #9BCE0A;
     grid-area: 7 / 4 / 9 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .footer {
     background: #9BCE0A;
     grid-area: 9 / 1 / 10 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }

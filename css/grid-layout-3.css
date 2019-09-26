@@ -26,57 +26,77 @@ main {
     justify-content: center;
     background-color: white;
     box-shadow: 15px 15px 10px 5px grey;
-    width: 850px;
-    height: 650px;
+    width: 840px;
+    height: 640px;
     border: 2px solid grey;
 }
 
 .one {
     background: #FDDA00;
     grid-area: 1 / 1 / 5 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .two {
     background: #FDDA00;
     grid-area: 5 / 1 / 10 / 4;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .three {
     background: #FDDA00;
     grid-area: 5 / 4 / 6 / 7;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .four {
     background: #FDDA00;
     grid-area: 5 / 7 / 6 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .five {
     background: #FDDA00;
     grid-area: 6 / 4 / 7 / 10;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .six {
     background: #FDDA00;
     grid-area: 6 / 10 / 7 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .seven {
     background: #FDDA00;
     grid-area: 7 / 4 / 8 / 7;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .eight {
     background: #FDDA00;
     grid-area: 7 / 7 / 8 / 10;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .nine {
     background: #FDDA00;
     grid-area: 7 / 10 / 8 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
 
 .ten {
     background: #FDDA00;
     grid-area: 8 / 4 / 10 / 13;
+    padding-top: .5em;
+    padding-left: .5em;
 }
