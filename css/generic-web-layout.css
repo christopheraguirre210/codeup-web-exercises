@@ -15,6 +15,7 @@ body {
     grid-row-gap: 25px;
 }
 
+/*header deals with the top and side nav bar*/
 
 header {
     display: flex;
@@ -55,6 +56,8 @@ nav a:hover {
     background-color: #333333;
 }
 
+/* the ads class has a grid with the top two ads*/
+
 .ads {
     display: grid;
     grid-area: 2 / 3 / 3 / 4;
@@ -78,6 +81,8 @@ nav a:hover {
     align-items: center;
     border: 2px dotted grey;
 }
+
+/*the ads2 class has a grid with the middle two ads in it*/
 
 .ads2 {
     display: grid;
@@ -103,6 +108,8 @@ nav a:hover {
     border: 2px dotted grey;
 }
 
+/*the ads3 class has a grid which contains the bottom two ads*/
+
 .ads3 {
     display: grid;
     grid-area: 4 / 3 / 5 / 4;
@@ -127,6 +134,8 @@ nav a:hover {
     border: 2px dotted grey;
 }
 
+/*the ad1 class has a grid for the bottom footer advertising and the page numbers(non-functional)*/
+
 .ad1 {
     display: inline-grid;
     grid-template-rows: repeat(5, 1fr);
@@ -142,11 +151,15 @@ nav a:hover {
     justify-content: center;
 }
 
+/*the uno class highlights the 1 in the page numbers*/
+
 #uno {
     background: black;
     color: white;
     line-height: 50px;
 }
+
+/*spacing between the page numbers*/
 
 #pages span {
     padding: 0 25px 0 25px;
@@ -173,6 +186,8 @@ nav a:hover {
 
 }
 
+ /*the top id contains the first header and paragraph*/
+
  #top {
     grid-area: 2 / 2 / 3 / 3;
      padding: 25px 25px;
@@ -181,15 +196,17 @@ nav a:hover {
  #top h1 {
      /*font-family: 'Open Sans', sans-serif;*/
      font-size: 40px;
-     padding-top: 50px;
+     padding-top: 10px;
      font-weight: lighter;
      color: #419387;
 }
 
  #top p {
-     padding-top: 3em;
+     padding-top: 4em;
      letter-spacing: .5mm;
  }
+
+/*the mid id contains the second header and paragraph*/
 
 #mid {
     grid-area: 3 / 2 / 4 / 3;
@@ -197,16 +214,18 @@ nav a:hover {
 }
 
 #mid p {
-    padding-top: 3em;
+    padding-top: 4em;
     letter-spacing: .5mm;
 }
 
 #mid h1 {
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 10px;
     font-weight: lighter;
     color: #419387;
 }
+
+/*the bottom id contains the third header and paragraph*/
 
 #bottom {
     grid-area: 4 / 2 / 5 / 3;
@@ -214,16 +233,19 @@ nav a:hover {
 }
 
 #bottom p {
-    padding-top: 3em;
+    padding-top: 4em;
     letter-spacing: .5mm;
 }
 
 #bottom h1 {
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 10px;
     font-weight: lighter;
     color: #419387;
 }
+
+/*fixed side nav bar that scrolls with the screen
+with z-index so it hides behind the top nav bar*/
 
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -253,6 +275,7 @@ nav a:hover {
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-/*@media screen and (max-height: 450px) {*/
-/*    .sidenav {padding-top: 15px;}*/
-/*    .sidenav a {font-size: 18px;}*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
