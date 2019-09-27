@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 18% 50% 30%;
+    grid-template-rows: 50px repeat(5, 400px);
+    font-family: 'Roboto', sans-serif;
+    grid-row-gap: 25px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(6, 150px);
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 800px;
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 3;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+nav {
+    background-color: #000000;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    line-height: 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+    padding: 0 15px;
+
+}
+
+nav a:hover {
+    background-color: #333333;
+}
+
+.ads {
+    display: grid;
+    grid-area: 2 / 3 / 3 / 4;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.one {
+    display: flex;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.two {
+    display: flex;
+    grid-area: 2 / 1 / 4 / 2;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.ads2 {
+    display: grid;
+    grid-area: 3 / 3 / 4 / 4;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.three {
+    display: flex;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.four {
+    display: flex;
+    grid-area: 2 / 1 / 4 / 2;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.ads3 {
+    display: grid;
+    grid-area: 4 / 3 / 5 / 4;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.five {
+    display: flex;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.six {
+    display: flex;
+    grid-area: 2 / 1 / 4 / 2;
+    justify-content: center;
+    align-items: center;
+    border: 2px blue;
+}
+
+ #top {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+ #top h1 {
+     /*font-family: 'Open Sans', sans-serif;*/
+     font-size: 40px;
+     padding-top: 50px;
+     font-weight: lighter;
+     color: #419387;
+}
+
+ #top p {
+     padding-top: 3em;
+     letter-spacing: .5mm;
+ }
+
+#mid {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#mid p {
+    padding-top: 3em;
+    letter-spacing: .5mm;
+}
+
+#mid h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    font-weight: lighter;
+    color: #419387;
+}
+
+#bottom {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+#bottom p {
+    padding-top: 3em;
+    letter-spacing: .5mm;
+}
+
+#bottom h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    font-weight: lighter;
+    color: #419387;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 240px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: -1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: lightgrey; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 50px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 20px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 240px; /* Same as the width of the sidebar */
+    padding: 0 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {*/
+/*    .sidenav {padding-top: 15px;}*/
+/*    .sidenav a {font-size: 18px;}*/
