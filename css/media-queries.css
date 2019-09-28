@@ -20,9 +20,21 @@ nav ul li  a{
     padding-right: 2em;
 }
 
+h1 {
+    padding-left: 1em;
+    padding-top: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
 .header-img {
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 2em 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
