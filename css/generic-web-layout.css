@@ -170,7 +170,7 @@ nav a:hover {
     background: #666666;
     color: #ffffff;
     padding-top: 50px;
-    padding-left: 10px;
+    padding-left: 40px;
     font-size: larger;
     z-index: -2;
 }
@@ -180,7 +180,7 @@ nav a:hover {
     background: #333333;
     color: #ffffff;
     padding-top: 25px;
-    padding-left: 10px;
+    padding-left: 40px;
     font-family: 'Titillium Web', sans-serif;
     z-index: -2;
 
@@ -190,7 +190,7 @@ nav a:hover {
 
  #top {
     grid-area: 2 / 2 / 3 / 3;
-     padding: 25px 25px;
+     padding: 25px 40px;
 }
 
  #top h1 {
@@ -210,7 +210,7 @@ nav a:hover {
 
 #mid {
     grid-area: 3 / 2 / 4 / 3;
-    padding: 25px 25px;
+    padding: 25px 40px;
 }
 
 #mid p {
@@ -229,7 +229,7 @@ nav a:hover {
 
 #bottom {
     grid-area: 4 / 2 / 5 / 3;
-    padding: 25px 25px;
+    padding: 25px 40px;
 }
 
 #bottom p {
@@ -249,7 +249,7 @@ with z-index so it hides behind the top nav bar*/
 
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 245px; /* Set the width of the sidebar */
+    width: 240px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: -1; /* Stay on top */
     top: 0; /* Stay at the top */
