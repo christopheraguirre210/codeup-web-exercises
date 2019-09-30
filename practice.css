@@ -1,0 +1,44 @@
+/*DEFAULT SCREEN SIZE - Mobile devices*/
+body {
+    margin: 0;
+}
+
+.box {
+    /*default box-sizing is content-box*/
+    /*box-sizing: border-box;*/
+    width:150px;
+    height: 150px;
+    padding: 25px;
+    border: 1px solid black;
+    background-color: #3B94D9;
+    margin: 5px;
+}
+/*sideways iPhone*/
+@media screen and (min-width: 768px) {
+    body {
+        background-color: black;
+    }
+}
+/*desktop*/
+@media screen and (min-width: 992px) {
+    .box {
+        background-color: green;
+    }
+}
+/*Extremely large screens*/
+@media screen and (min-width: 1200px) {
+    .box {
+        background-color: #419387;
+    }
+}
+/*!*FOR SMALLER DESKTOPS, Ipad Pro*!*/
+/*@media screen and (max-width: 1024px) {*/
+/*    .box {*/
+/*        background-color: #9BCE0A;*/
+/*    }*/
+/*}*/
+/*!*For mobile devices*!*/
+/*@media screen and (max-width: 768px) {*/
+
+/*}*/
+
