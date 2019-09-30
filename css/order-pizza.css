@@ -1,4 +1,8 @@
-.btn {
-    background-color: white;
-    border: 2px dotted #3B94D9;
+.jumbotron-fluid {
+    background-image: url("../images/pizza.png");
 }
+
+h1 {
+    opacity: .6;
+}
+
