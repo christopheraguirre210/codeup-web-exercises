@@ -12,12 +12,12 @@
     </head>
     <body>
     <header>
+<!--navigation bar on the top-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Pizza World</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -36,11 +36,13 @@
                 <i class="fas fa-user-alt"></i>Sign up!
             </div>
         </nav>
+<!-- header image with name of the business-->
         <div class="container-fluid">
             <div class="jumbotron jumbotron-fluid">
                     <h1 class="display-4 text-center bg-light" >Welcome to Pizza World!</h1>
-            </div>    
+            </div>
         </div>
+<!--        Header card that navigates thru the tabs of the crust, cheese and the toppings-->
         <h2>Build your own pizza!</h2>
         <hr>
         <ul class="nav">
@@ -55,6 +57,7 @@
             </li>
         </ul>
     </header>
+<!--    Crust menu with single select boxes-->
         <div class="card header-card">
             <div class="card-body">
                 <a id="top1">Choose size and crust</a>
@@ -70,7 +73,7 @@
                         <li class="list-group-item">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="crust_size" id="small" value="small">
-                                <label class="form-check-label" for="hand_small">
+                                <label class="form-check-label" for="small">
                                     Small(10")
                                 </label>
                             </div>
@@ -78,7 +81,7 @@
                         <li class="list-group-item">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="crust_size" id="medium" value="medium">
-                                <label class="form-check-label" for="hand_medium">
+                                <label class="form-check-label" for="medium">
                                     Medium(12")
                                 </label>
                             </div>
@@ -112,11 +115,14 @@
                     </li>
                 </ul>
             </div>
-            <cardfooter>
+<!--            button that is linked to the middle of the page to direct you to the Sauce and Cheese-->
+            <div class="card-footer">
                 <a href="#mid2"><button type="button" class="btn btn-primary btn-sm">Next Step <i class="fas fa-angle-right"></i></button></a>
-            </cardfooter>
+            </div>
         </div>
         <hr>
+<!--    horizontal break for division of the pizza making process
+        below is the middle part of the page for the Sauce and Cheese selections with a dropdown option list-->
         <div class="card header-card">
             <div class="card-body">
                 <a id="mid2">Choose cheese and sauce.</a>
@@ -176,14 +182,16 @@
                     </li>
                 </ul>
             </div>
-            <cardfooter>
+<!--            below is a grouped button that has the previous and next page as an option-->
+            <div class="card-footer">
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <a href="#top1" class="btn btn-primary"><i class="fas fa-angle-left"></i> Back to Crust</a>
                     <a href="#low3" class="btn btn-primary">To the toppings! <i class="fas fa-angle-right"></i></a>
                 </div>
-            </cardfooter>
+            </div>
         </div>
         <hr>
+<!--        Below is the toppings menu with multiple selector checkbox-->
         <div class="card header-card">
             <div class="card-body">
                 <a id="low3">Choose Toppings</a>
@@ -223,9 +231,11 @@
                     </li>
                 </ul>
             </div>
-            <cardfooter>
+<!--            Below is an non-functional checkout button
+                 DON'T EXPECT A PIZZA YOU SILLY HUMAN-->
+            <div class="card-footer">
                 <button type="button" class="btn btn-primary btn-sm">Checkout <i class="fas fa-shopping-cart"></i></button>
-            </cardfooter>
+            </div>
         </div>
     </body>
 </html>

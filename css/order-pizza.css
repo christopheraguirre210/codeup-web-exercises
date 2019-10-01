@@ -35,7 +35,7 @@ background: #107BFE;
     width: 100%;
 }
 
-cardfooter {
+.card-footer {
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px 10px 0;
