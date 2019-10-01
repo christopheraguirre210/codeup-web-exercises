@@ -1,10 +1,9 @@
 .jumbotron-fluid {
     background-image: url("../images/pizza.png");
-    background-repeat: none;
 }
 
 h1 {
-    opacity: .6;
+    opacity: .65;
 }
 
 .nav li {
@@ -15,6 +14,23 @@ h1 {
 .header-card {
 background: #107BFE;
     color: white;
+    padding-top: 10px;
+    line-height: 5px;
+}
+
+.card-text {
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.crust {
+    width: 100%;
+}
+
+cardfooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px 10px 0;
 }
 
 
