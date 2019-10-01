@@ -1,0 +1,18 @@
+.my-row {
+    margin-top: 2em;
+    color: #848487;
+}
+
+.container1 {
+    align-content: center;
+
+}
+
+.pro-row {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    margin: 30px;
+}
