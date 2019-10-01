@@ -1,9 +1,17 @@
-.jumbotron-fluid {
-    background-image: url("../images/pizza.png");
+body {
+    margin: 0 20px;
 }
 
 h1 {
     opacity: .65;
+}
+
+.jumbotron-fluid {
+    background-image: url("../images/pizza.png");
+}
+
+.container-fluid {
+    padding: 2em;
 }
 
 .nav li {
