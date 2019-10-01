@@ -1,8 +1,20 @@
 .jumbotron-fluid {
     background-image: url("../images/pizza.png");
+    background-repeat: none;
 }
 
 h1 {
     opacity: .6;
 }
+
+.nav li {
+    border: 1px solid grey;
+    border-bottom: none;
+}
+
+.header-card {
+background: #107BFE;
+    color: white;
+}
+
 
