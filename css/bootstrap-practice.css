@@ -16,3 +16,12 @@
     height: 300px;
     margin: 30px;
 }
+
+.row-2 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    margin: 30px;
+}
