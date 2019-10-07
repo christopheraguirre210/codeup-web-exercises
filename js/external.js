@@ -1,8 +1,8 @@
 "use strict";
 
-console.log("Hello from external JavaScript!")
+console.log("Hello from external JavaScript!");
 
-alert("Welcome to my website!")
+alert("Welcome to my website!");
 
 var response = prompt("What is your favorite color?");
 alert("Awesome, " + response + " is my favorite color too!");
@@ -45,7 +45,7 @@ console.log(studentCanSignUp);
 var offerValid = true;
 var cart = 3;
 var premiumMember = false;
-var canHasDiscount = offerValid && (cart > 2 || premiumMember)
+var canHasDiscount = offerValid && (cart > 2 || premiumMember);
 console.log(canHasDiscount);
 
 // function productOffer() {

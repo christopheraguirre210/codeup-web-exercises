@@ -49,13 +49,10 @@ console.log("Lucky number is " + random);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-function isTwo (num) {
-    if(num === 2) {
-        return true;
-    }else {
-        return false;
-    }
+function isTwo(num) {
+    return num === 2;
 }
+
 
 console.log(isTwo(random));
 /**
