@@ -3,23 +3,24 @@
 console.log("Hello from external JavaScript!");
 
 alert("Welcome to my website!");
-
+// below is my movie store
 var response = prompt("What is your favorite color?");
 alert("Awesome, " + response + " is my favorite color too!");
 
-var mermaid = 3;
-var bear = 5;
-var hercules = 1;
+var mermaid = parseInt(prompt("How long would you like to rent The Little Mermaid?"));
+var bear = parseInt(prompt("How long would you like to rent Brother Bear?"));
+var hercules = parseInt(prompt("How long would you like to rent Hercules?"));
 
-prompt("If a movie costs 3 dollars a day, how much did you have to pay?");
-alert((mermaid * 3) + (bear * 3) + (hercules * 3) + "dollars!");
+alert("Your total comes out to $" + (mermaid + bear + hercules) * 3 + ".");
 
-var google = 400;
-var amazon = 380;
-var facebook = 350;
+//below is hourly tech work
 
-prompt("10 hours FB, 6 hours GG, 4 hours AZ. How much did you get paid");
-alert((google * 6) + (amazon * 4) + (facebook * 10) + "dollars");
+var googPay = parseInt(prompt("Working for Google pays $400/hr. How many hours of work was done at Google?")) * 400;
+var fBPay = parseInt(prompt("Working for Facebook pays $350/hr. How many hours of work was done at Facebook?")) * 350;
+var zonPay = parseInt(prompt("Working for Amazon pays $380/hr. How many hours of work was done at Amazon?")) * 380;
+
+alert("Your pay comes out to " + (googPay + fBPay + zonPay) + ".");
+
 
 //enroll question
 var classTime = "9AM";
@@ -29,17 +30,6 @@ var studentClassTime = "9AM";
 var studentCanSignUp = currClassSize < classSize && classTime !== studentClassTime;
 console.log(studentCanSignUp);
 
-// function college() {
-//     var full = true;
-//     var conflict = true;
-//     if (!full && !conflict) {
-//         return "enroll";
-//     } else {
-//         return "can't enroll"
-//     }
-// }
-//
-// console.log(college());
 // enroll question ^^
 //discount question
 var offerValid = true;
