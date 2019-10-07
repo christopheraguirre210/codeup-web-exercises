@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("Hello from external JavaScript!")
 
 alert("Welcome to my website!")
@@ -27,15 +29,17 @@ var studentClassTime = "9AM";
 var studentCanSignUp = currClassSize < classSize && classTime !== studentClassTime;
 console.log(studentCanSignUp);
 
-function college() {
-    var full = true;
-    var conflict = true;
-    if (!full && !conflict) {
-        return "enroll";
-    } else {
-        return "can't enroll"
-    }
-}
+// function college() {
+//     var full = true;
+//     var conflict = true;
+//     if (!full && !conflict) {
+//         return "enroll";
+//     } else {
+//         return "can't enroll"
+//     }
+// }
+//
+// console.log(college());
 // enroll question ^^
 //discount question
 var offerValid = true;
@@ -44,22 +48,22 @@ var premiumMember = false;
 var canHasDiscount = offerValid && (cart > 2 || premiumMember)
 console.log(canHasDiscount);
 
-function productOffer() {
-    var moreThanTwo = true;
-    var expired = true;
-    var premium = true;
-
-    if((moreThanTwo && !expired) || premium) {
-        return "offer"
-    } else {
-        return "no offer"
-    }
-}
+// function productOffer() {
+//     var moreThanTwo = true;
+//     var expired = true;
+//     var premium = true;
+//
+//     if((moreThanTwo && !expired) || premium) {
+//         return "offer"
+//     } else {
+//         return "no offer"
+//     }
+// }
 // discount question ^^
 //exercise #4 below
 
 var username = 'codeup';
 var password = 'notastrongpassword';
 
-password.length >= 5 && password.indexOf(username) === -1 && username.length <= 20 && username === username.trim() &&
-    password === pasword.trim();
+console.log(password.length >= 5 && password.indexOf(username) === -1 && username.length <= 20 && username === username.trim() &&
+    password === password.trim());
