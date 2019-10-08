@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/beach-bench-boardwalk-462024.jpg");
+    font-family: 'Marck Script', cursive;
+}

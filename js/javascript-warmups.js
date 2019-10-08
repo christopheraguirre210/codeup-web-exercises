@@ -56,13 +56,15 @@ function upperCase(str) {
 
 }
 
-console.log(str.upperCase());
+console.log(upperCase());
 //write a function that returns the area of a circle when passed the diameter
 
 function areaOfCircle(diam) {
     var rad = (diam / 2);
     return Math.PI * (rad * rad);
 }
+
+console.log(areaOfCircle());
 
 // write a function that gets the perimeter of a quadrilateral
 function perimeterOfQuadrilateral(a,b,c,d) {
@@ -87,7 +89,7 @@ console.log(posEven(3));
 
 //write a javascript function that prompts a user for an input and returns true if the
 //number is greater than 5
-var num = parseInt(prompt("pick a number any number."))
+var num = parseInt(prompt("pick a number any number."));
 
 function moreThanFive(num) {
     return num > 5;

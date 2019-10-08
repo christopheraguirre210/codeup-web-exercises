@@ -41,14 +41,14 @@ h1 {
 ol {
     display: inline-block;
     list-style: lower-roman inside;
-    padding: 0px;
+    padding: 0;
     text-align: left;
 }
 
 ul {
     display: inline-block;
     list-style: square inside;
-    padding: 0px;
+    padding: 0;
     text-align: left;
 }
 
@@ -111,7 +111,7 @@ hr.style-eight:after {
     padding: 2px;
     text-align: center;
     font-size: xx-large;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", serif;
 }
 
 #user-table td {
@@ -137,7 +137,7 @@ nav p {
     font-size: 24px;
     line-height: 45px;
     float: left;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 nav ul {
@@ -152,7 +152,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    font-family: arial;
+    font-family: arial, serif;
     color: #222;
     font-size: 20px;
     padding: 25px 100px;
@@ -164,7 +164,7 @@ nav ul li ul {
     position: absolute;
     background-color: cornflowerblue;
     padding: 10px;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0 0 4px 4px;
 }
 
 nav ul li:hover ul {
