@@ -17,6 +17,7 @@
  *
  * Can you refactor your code to use functions?
  */
+confirm("Pick a number, any number");
 
 
 
@@ -87,6 +88,27 @@ console.log(analyzeColor(randomColor));
 switch (randomColor) {
     case 'red':
         console.log("Red Cream Sodaaaaa!");
+        break;
+    case 'orange':
+        console.log("Orange Sodaaaaaa!");
+        break;
+    case 'yellow':
+        console.log("Pineapple Sodaaaa!");
+        break;
+    case 'green':
+        console.log("I don't recall having a green soda before.");
+        break;
+    case 'blue':
+        console.log("Blue Cream Sodaaaaaa!");
+        break;
+    case 'indigo':
+        console.log("Indigo Soda?!");
+        break;
+    case 'violet':
+        console.log("Grape Sodaaaaa!");
+        break;
+    default:
+        console.log("I got nothing for that.");
 
 }
 
@@ -96,6 +118,12 @@ switch (randomColor) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+analyzeColor(); {
+var response = prompt("Choose a color, any color young lad!");
+alert("abra kadabra, you chose " + response);
+
+}
 
 /* ########################################################################## */
 
@@ -119,7 +147,25 @@ switch (randomColor) {
  * return value.
  */
 
-/**
+function calculateTotal(percent, total) {
+    if(percent === 1) {
+        return total - (total * 0.10)
+    } else if(percent === 2) {
+        return total - (total * 0.25)
+    } else if(percent === 3) {
+        return total - (total * 0.35)
+    } else if(percent === 4) {
+        return total - (total * 0.50)
+    } else if(percent === 5) {
+        return total - total
+    } else {
+        return total;
+    }
+}
+
+    console.log(calculateTotal(4, 100));
+
+    /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
  * Prompt the user for their total bill, then use your `calculateTotal` function
@@ -127,7 +173,17 @@ switch (randomColor) {
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 
+calculateTotal()
+var bill = parseFloat(prompt("What was your total bill, kind Sir or Ma'am?"));
+
+alert("Your lucky number is " + luckyNumber);
+
+alert("Your original bill was " + bill);
+
+var discountPrice = calculateTotal(luckyNumber, bill);
+
+alert("After the discount your total is " + discountPrice + "!");
 
 })();
