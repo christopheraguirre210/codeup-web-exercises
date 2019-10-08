@@ -15,24 +15,6 @@
  *
  * Can you refactor your code to use functions?
  */
-var number = confirm("Would you like to enter a number?");
-prompt("please enter a number")
-
-if(number === true && number % 2 === 0) {
-    alert("this is an even number!");
-} else {
-    alert("This number is false!");
-}
-
-if(number === true) {
-    alert(number + 100);
-}
-
-if(number > 0) {
-    alert("positive")
-} else {
-    alert("negative number boss")
-}
 
 
 
@@ -56,14 +38,39 @@ if(number > 0) {
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
+console.log(randomColor);
+
+
+function analyzeColor() {
+    if(randomColor === 'red') {
+        return "Roses are red!"
+    } else if(randomColor === 'orange') {
+        return "Oranges are orange haha."
+    } else if(randomColor === 'yellow') {
+        return "Yellow is a funny color."
+    } else if(randomColor === 'green') {
+        return "Green grass is good grass."
+    } else if(randomColor === 'blue') {
+        return "Blue is my favorite color."
+    } else if(randomColor === 'indigo') {
+        return "Is indigo a type of purple?"
+    } else if(randomColor === 'violet') {
+        return "Violet is definitely purple!"
+    } else {
+        return "I don't know about that color"
+    }
+}
+
+console.log(analyzeColor(randomColor));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color everytime the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
@@ -74,6 +81,12 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+
+switch (randomColor) {
+    case 'red':
+        console.log("Red Cream Sodaaaaa!");
+
+}
 
 /**
  * TODO:
