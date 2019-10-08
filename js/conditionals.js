@@ -1,3 +1,5 @@
+(function () {
+
 "use strict";
 
 /**
@@ -126,3 +128,6 @@ switch (randomColor) {
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+
+})();

@@ -1,3 +1,6 @@
+(function () {
+
+
 "use strict";
 
 /**
@@ -100,3 +103,7 @@ function applyDiscount(a, b) {
 }
 
 console.log(applyDiscount(45.99, 0.12));
+
+
+
+})();
