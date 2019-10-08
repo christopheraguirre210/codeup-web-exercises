@@ -17,9 +17,25 @@
  *
  * Can you refactor your code to use functions?
  */
-confirm("Pick a number, any number");
 
-
+    var numbers = confirm("Will you enter a number?");
+    if(numbers === true) {
+        var num = parseInt(prompt("What's your number?"));
+    } if (isNaN(num)) {
+        alert("That's not a number, Punk.")
+    } else {
+        if(num % 2 === 0) {
+            alert("That's even boss!");
+        } else {
+            alert("It's odd boss!");
+        }
+        alert("your number plus one hundred is " + (parseInt(num) + 100));
+        if(num > 0) {
+            alert("That's a positive number boss!");
+        } else {
+            alert("That's not a positive number boss!");
+        }
+    }
 
 
 /* ########################################################################## */
@@ -175,7 +191,7 @@ function calculateTotal(percent, total) {
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
-calculateTotal()
+calculateTotal();
 var bill = parseFloat(prompt("What was your total bill, kind Sir or Ma'am?"));
 
 alert("Your lucky number is " + luckyNumber);
