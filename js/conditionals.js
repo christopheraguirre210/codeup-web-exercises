@@ -30,7 +30,7 @@
             alert("It's odd boss!");
         }
         alert("your number plus one hundred is " + (parseInt(num) + 100));
-        if(num > 0) {
+        if(num >= 0) {
             alert("That's a positive number boss!");
         } else {
             alert("That's not a positive number boss!");
