@@ -21,8 +21,9 @@ function sayHello(name) {
  *
  * console.log 'helloMessage' to check your work
  */
-console.log(sayHello("Chris"));
-/**
+var helloMessage = sayHello("Chris");
+    console.log(helloMessage);
+    /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
@@ -69,8 +70,8 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(a,b) {
-    return a * b;
+function calculateTip(percent,bill) {
+    return percent * bill;
 }
 
 console.log(calculateTip(0.15, 33.42));
@@ -82,7 +83,7 @@ console.log(calculateTip(0.15, 33.42));
  */
 var totalBill = prompt("How much was your total bill?");
 var tipPercent =prompt("how much would you like to tip?");
-alert("Your tip is $" + calculateTip(tipPercent, totalBill));
+alert("Your tip is $" + calculateTip((tipPercent / 100), totalBill));
 
 /**
  * TODO:
@@ -98,8 +99,8 @@ alert("Your tip is $" + calculateTip(tipPercent, totalBill));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(a, b) {
-    return a - (a * b);
+function applyDiscount(originalPrice, discountPercent) {
+    return originalPrice - (originalPrice * discountPercent);
 }
 
 console.log(applyDiscount(45.99, 0.12));

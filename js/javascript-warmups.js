@@ -103,8 +103,8 @@ console.log(moreThanFive(num));
 function helloThere(string = "stranger") {
     return "Hello there, " + string + ".";
 }
-var promptedResponse = prompt("Input string, please")
-alert(helloThere(promptedResponse))
+var promptedResponse = prompt("Input string, please");
+alert(helloThere(promptedResponse));
 
 //branch changes in github
 //git branch wed-warmup
@@ -114,5 +114,5 @@ and now you are in a new branch
  */
 
 /*
-
+git checkout -b 'new branch' = creates and puts you in the branch all at once.
 */
