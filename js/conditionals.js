@@ -198,8 +198,8 @@ alert("Your lucky number is " + luckyNumber);
 
 alert("Your original bill was " + bill);
 
-var discountPrice = calculateTotal(luckyNumber, bill);
+var discountPrice = calculateTotal(luckyNumber, bill.toFixed(2));
 
-alert("After the discount your total is " + discountPrice + "!");
+alert("After the discount your total is " + discountPrice.toFixed(2) + "!");
 
 })();
