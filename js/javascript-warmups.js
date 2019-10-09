@@ -106,6 +106,7 @@ function helloThere(string = "stranger") {
 var promptedResponse = prompt("Input string, please");
 alert(helloThere(promptedResponse));
 
+
 //branch changes in github
 //git branch wed-warmup
 /*git branch *enter
