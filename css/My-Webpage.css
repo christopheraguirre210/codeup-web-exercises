@@ -4,6 +4,32 @@
 }
 
 body {
-    background-image: url("../images/beach-bench-boardwalk-462024.jpg");
+    background-image: url("../images/my-website.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Cinzel', serif;
+}
+
+h1, h3 {
     font-family: 'Marck Script', cursive;
+}
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #ffb50a;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "CA";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #aaa7ad;
+    font-family: 'Zhi Mang Xing', cursive;
 }
