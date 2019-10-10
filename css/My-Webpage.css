@@ -52,7 +52,7 @@ hr.style-eight:after {
     min-width: 9000px; /* Assign an insanely large width */
     top: 0;
     right: 0;
-    animation: slide-animation 40s infinite;
+    animation: slide-animation 50s infinite;
 }
 #slider .slide {
     position: relative;
