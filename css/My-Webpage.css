@@ -14,6 +14,10 @@ body {
 h1, h3 {
     font-family: 'Marck Script', cursive;
 }
+.slide {
+    float: left;
+}
+
 
 hr.style-eight {
     overflow: visible; /* For IE */
@@ -32,4 +36,59 @@ hr.style-eight:after {
     padding: 0 0.25em;
     background: #aaa7ad;
     font-family: 'Zhi Mang Xing', cursive;
+}
+#slider,  #slider .slide{
+    width: 500px;
+    height: 250px;
+}
+#slider {
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 1.2em;
+    background: transparent;
+}
+#slider .container {
+    position: relative;
+    min-width: 9000px; /* Assign an insanely large width */
+    top: 0;
+    right: 0;
+    animation: slide-animation 40s infinite;
+}
+#slider .slide {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+/* [ANIMATION] */
+@keyframes slide-animation {
+    0% {
+        opacity: 0;
+        right: 0;
+    }
+    11% {
+        opacity: 1;
+        right: 0;
+    }
+    22% {
+        opacity: 1;
+        right: 100%; }
+    33% {
+        right: 100%; }
+    44% {
+        right: 200%; }
+    55% {
+        right: 200%; }
+    66% {
+        right: 300%; }
+    77% {
+        right: 300%; }
+    88% {
+        opacity: 1;
+        right: 400%;
+    }
+    100% {
+        opacity: 0;
+        right: 400%;
+    }
 }
