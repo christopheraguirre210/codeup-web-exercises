@@ -21,7 +21,7 @@
     var numbers = confirm("Will you enter a number?");
     if(numbers === true) {
         var num = parseInt(prompt("What's your number?"));
-    } if (isNaN(num)) {
+     if (isNaN(num)) {
         alert("That's not a number, Punk.")
     } else {
         if(num % 2 === 0) {
@@ -36,7 +36,7 @@
             alert("That's not a positive number boss!");
         }
     }
-
+}
 
 /* ########################################################################## */
 
@@ -163,16 +163,16 @@ alert("abra kadabra, you chose " + response);
  * return value.
  */
 
-function calculateTotal(percent, total) {
-    if(percent === 1) {
+function calculateTotal(luckyNumber, total) {
+    if(luckyNumber === 1) {
         return total - (total * 0.10)
-    } else if(percent === 2) {
+    } else if(luckyNumber === 2) {
         return total - (total * 0.25)
-    } else if(percent === 3) {
+    } else if(luckyNumber === 3) {
         return total - (total * 0.35)
-    } else if(percent === 4) {
+    } else if(luckyNumber === 4) {
         return total - (total * 0.50)
-    } else if(percent === 5) {
+    } else if(luckyNumber === 5) {
         return total - total
     } else {
         return total;
