@@ -46,6 +46,7 @@ console.log("hello from conditionals lec.js!");
 // }
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0
+
 // var numberOfLives = 0;
 // if(numberOfLives === 0){
 //     alert("Sorry, game over.");
