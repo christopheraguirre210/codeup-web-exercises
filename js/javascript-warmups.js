@@ -1,4 +1,4 @@
-//JavaScript warm-ups for #DEIMOS
+// JavaScript warm-ups for #DEIMOS
 
 function sum(a,b) {         //warm up for day 2.
     return a + b;
@@ -118,6 +118,19 @@ function newArray(arr){
 
 console.log(newArray([1,2,3,4,5]));
 
+//write a javascript function that returns the quotient of the two numbers, but only when passed two numbers.It
+//should return false in all other cases
+
+function quotient(a,b){
+if(typeof a === 'number' && typeof b === 'number') {
+    return a / b;
+ } else {
+    return false;
+ }
+}
+
+console.log(quotient(24, 6));
+
 
 //branch changes in github
 //git branch wed-warmup
@@ -131,8 +144,8 @@ git checkout -b 'new branch' = creates and puts you in the branch all at once.
 */
 
 
-
-function isEvens(num) {
-    return parseFloat(num) % 2 === 0;
-}
-console.log(isEvens(-5));
+//
+// function isEvens(num) {
+//     return parseFloat(num) % 2 === 0;
+// }
+// console.log(isEvens(-5));
