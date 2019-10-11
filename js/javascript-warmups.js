@@ -54,11 +54,11 @@ console.log(addStrings("one", "two", "three"));
 
 //write a javascript function that takes in a string and returns that string with all the characters uppercase
 function upperCase(str) {
-    return str.toUpperCase()
+    return str.toUpperCase();
 
 }
 
-console.log(upperCase());
+console.log(upperCase("cats"));
 //write a function that returns the area of a circle when passed the diameter
 
 function areaOfCircle(diam) {
@@ -129,3 +129,10 @@ and now you are in a new branch
 /*
 git checkout -b 'new branch' = creates and puts you in the branch all at once.
 */
+
+
+
+function isEvens(num) {
+    return parseFloat(num) % 2 === 0;
+}
+console.log(isEvens(-5));
