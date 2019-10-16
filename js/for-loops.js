@@ -1,17 +1,17 @@
-function showMultiplicationTable(input){
+function showMultiplicationTable(num){
     for(var i = 1; i <= 10; i++){
-        console.log(input + " x " + i + " = " + input * i);
+        console.log(num + " x " + i + " = " + num * i);
     }
 }
 showMultiplicationTable(7);
 
 
 // for (var i = 1; i <= 10; i++){
-//     var rand = Math.floor(Math.random() * 180) + 20;
-//     if(rand % 2 === 0){
-//         console.log(rand + " is even");
+//     var number = Math.floor(Math.random() * 180) + 20;
+//     if(number % 2 === 0){
+//         console.log(number + " is even");
 //     } else{
-//     console.log(rand + " is odd");
+//     console.log(number + " is odd");
 //  }
 // }
 
