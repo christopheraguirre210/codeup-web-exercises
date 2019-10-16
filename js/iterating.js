@@ -77,7 +77,7 @@
     console.log(secondItem(shapes));
 
     function lastItem(names){
-        return shapes[4];
+        return shapes[shapes.length - 1];
     }
 
     console.log(lastItem(names));
