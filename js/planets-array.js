@@ -41,9 +41,11 @@
     planets.indexOf('Earth');
     console.log(planets);
 
-    // console.log("Reversing the order of the planets array.");
-    // console.log(planets);
-    //
-    // console.log("Sorting the planets array.");
-    // console.log(planets);
+    console.log("Reversing the order of the planets array.");
+    planets.reverse();
+    console.log(planets);
+
+    console.log("Sorting the planets array.");
+    planets.sort();
+    console.log(planets);
 })();
