@@ -3,7 +3,7 @@
 * WHILE LOOPS
 */
 
-// var i = 0;
+// var i = 10;
 //
 // while(i > 0){
 //     console.log(i);
@@ -79,7 +79,7 @@ var myArray = ["apples", "oranges", "bananas", "grapes", "pineapples"];
 // 7. Create a for loop that iterates over this array and logs out each
 // element to the console
 
-// for(var i = 0; i < myArray.length; i ++){
+// for(var i = 0; i < myArray.length; i++){
 //     console.log(myArray[i]);
 // }
 
