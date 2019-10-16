@@ -1,9 +1,9 @@
-function showMultiplicationTable(num){
-    for(var i = 1; i <= 10; i++){
-        console.log(num + " x " + i + " = " + num * i);
-    }
-}
-showMultiplicationTable(7);
+// function showMultiplicationTable(num){
+//     for(var i = 1; i <= 10; i++){
+//         console.log(num + " x " + i + " = " + num * i);
+//     }
+// }
+// showMultiplicationTable(7);
 
 
 // for (var i = 1; i <= 10; i++){
@@ -17,7 +17,7 @@ showMultiplicationTable(7);
 
 
 // for(var i = 1; i <= 9; i++) {
-//     console.log(("" + i).repeat(i));
+// console.log(("" + i).repeat(i));
 // }
 
 // for(var i = 100; i >= 5; i-=5){
