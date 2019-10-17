@@ -31,3 +31,6 @@
    //  console.log(planetsArray);
 
 })();
+// git checkout -b new branch name
+
+//git push origin new branch

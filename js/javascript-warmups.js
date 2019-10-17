@@ -144,6 +144,21 @@ function logArray(arr){
 
 console.log(logArray([1,2,3,4,5]));
 
+
+//write a javascript function that takes in an input and returns true if the input is a string at least 8 characters in length. It should return false for all other input
+
+function longString(str){
+    if(str.length <= 8){
+        console.log("please enter a string with at least 8 characters");
+    } else {
+        console.log("thank you!");
+    }
+}
+
+// return typeof str === "string" && str.length >= 8;
+
+console.log(longString("abbazabb"));
+
 //branch changes in github
 //git branch wed-warmup
 /*git branch *enter
