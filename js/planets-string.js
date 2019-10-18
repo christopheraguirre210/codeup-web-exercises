@@ -27,7 +27,17 @@
      * string, and <li> tags around each planet.
      */
 
-   var planetsArray = planetsArray.join('<br>');
-    document.write(planetsArray);
+   var planetsBr = planetsArray.join('<br>');
+    document.write(planetsBr);
+
+
+    var planetsList = "<ul>";
+    planetsArray.forEach(function (planet) {
+        planetsList += "<li>" + planet + "</li>"
+    });
+
+    planetsList += "</ul>";
+
+    document.write(planetsList);
 
 })();

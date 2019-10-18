@@ -49,11 +49,22 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+
+    shoppers.forEach(function (shopper) {
+        var discount = shopper.amount * .12;
+        var discountPrice = shopper.amount - discount;
+        if(shopper.amount > 200){
+            console.log(shopper.name + " Your original price is: " + shopper.amount + "." + " Your discount is: " + discount + "." + "Your price after discount is: " + discountPrice);
+        }else {
+            console.log(shopper.name + " Your total price is: " + shopper.amount);
+        }
+    });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -67,6 +78,46 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {
+            title: "Hitchhikers Guide To The Galaxy",
+            author:{
+                firstName: "Douglas",
+                lastName: "Adams"
+            }
+        },
+        {
+            title: "IT",
+            author:{
+                firstName: "Stephen",
+                lastName: "King"
+            }
+        },
+        {
+            title: "The Art of War",
+            author:{
+                firstName: "Sun",
+                lastName: "Tzu"
+            }
+        },
+        {
+            title: "Harry Potter and the Sorcerers Stone",
+            author:{
+                firstName: "J.K.",
+                lastName: "Rowling"
+            }
+        },
+        {
+            title: "Aladdin: Far From Agrabah",
+            author:{
+                firstName: "Aiesha",
+                lastName: "Saeed"
+            }
+        }
+    ];
+
+    console.log(books);
 
     /**
      * TODO:
@@ -92,6 +143,11 @@
      *      ---
      *      ...
      */
+
+    books.forEach(function (book,index) {
+        console.log(book.title,index,);
+        console.log(book.author.firstName,book.author.lastName);
+    });
 
     /**
      * Bonus:
