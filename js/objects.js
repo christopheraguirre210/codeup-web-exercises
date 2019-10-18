@@ -32,7 +32,7 @@
      */
 
     person.sayHello = function () {
-        return "Hello from Christopher Aguirre!";
+        return "Hello from " + person.firstName + " " + person.lastName + " !";
     };
     console.log(person.sayHello());
     /** TODO:
@@ -162,5 +162,15 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(title,first,last){
+        var book = {};
+        book.title = title;
+        book.author = {
+            firstName: first,
+            lastName: last
+        };
+        return book;
+    }
 
 })();
