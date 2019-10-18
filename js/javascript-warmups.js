@@ -159,6 +159,28 @@ function longString(str){
 
 console.log(longString("abbazabb"));
 
+
+//write a function that takes in a floating point number and returns a number rounded down. it should return false for all inputs that arent numbers
+
+
+// function roundDownNum(num){
+//     if(num == 'number'){
+//         return Math.floor(num);
+//     } else {
+//         return false;
+//     }
+// }
+//
+// console.log(roundDownNum(3.4));
+
+function roundDownFloat(num){
+    if(typeof num === 'number' && !isNaN(num)){
+        return Math.floor(num);
+    }else{
+        return false;
+    }
+}
+
 //branch changes in github
 //git branch wed-warmup
 /*git branch *enter
