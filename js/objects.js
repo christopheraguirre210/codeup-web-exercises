@@ -60,7 +60,7 @@
         var discount = shopper.amount * .12;
         var discountPrice = shopper.amount - discount;
         if(shopper.amount > 200){
-            console.log(shopper.name + " Your original price is: " + shopper.amount + "." + " Your discount is: " + discount + "." + "Your price after discount is: " + discountPrice);
+            console.log(shopper.name + " Your original price is: " + shopper.amount.toFixed(2) + "." + " Your discount is: " + discount.toFixed(2) + "." + "Your price after discount is: " + discountPrice.toFixed(2));
         }else {
             console.log(shopper.name + " Your total price is: " + shopper.amount);
         }
@@ -81,7 +81,7 @@
 
     var books = [
         {
-            title: "Hitchhikers Guide To The Galaxy",
+            title: "Hitchhiker's Guide To The Galaxy",
             author:{
                 firstName: "Douglas",
                 lastName: "Adams"
@@ -102,7 +102,7 @@
             }
         },
         {
-            title: "Harry Potter and the Sorcerers Stone",
+            title: "Harry Potter and the Sorcerer's Stone",
             author:{
                 firstName: "J.K.",
                 lastName: "Rowling"
@@ -145,8 +145,11 @@
      */
 
     books.forEach(function (book,index) {
-        console.log(book.title,index,);
-        console.log(book.author.firstName,book.author.lastName);
+        console.log("Book # ",index + 1);
+        console.log("Title: ", book.title);
+        console.log("Author: ", book.author.firstName,book.author.lastName);
+        console.log("---");
+        console.log("...");
     });
 
     /**
