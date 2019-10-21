@@ -133,31 +133,31 @@
 
 //write a javascript function that takes in an array that has a length of 5. console log each element of the array
 
-function logArray(arr){
-    console.log(arr);
-    console.log(arr[0]);
-    console.log(arr[1]);
-    console.log(arr[2]);
-    console.log(arr[3]);
-    console.log(arr[4]);
-}
-
-console.log(logArray([1,2,3,4,5]));
-
-
-//write a javascript function that takes in an input and returns true if the input is a string at least 8 characters in length. It should return false for all other input
-
-function longString(str){
-    if(str.length <= 8){
-        console.log("please enter a string with at least 8 characters");
-    } else {
-        console.log("thank you!");
-    }
-}
-
-// return typeof str === "string" && str.length >= 8;
-
-console.log(longString("abbazabb"));
+// function logArray(arr){
+//     console.log(arr);
+//     console.log(arr[0]);
+//     console.log(arr[1]);
+//     console.log(arr[2]);
+//     console.log(arr[3]);
+//     console.log(arr[4]);
+// }
+//
+// console.log(logArray([1,2,3,4,5]));
+//
+//
+// //write a javascript function that takes in an input and returns true if the input is a string at least 8 characters in length. It should return false for all other input
+//
+// function longString(str){
+//     if(str.length <= 8){
+//         console.log("please enter a string with at least 8 characters");
+//     } else {
+//         console.log("thank you!");
+//     }
+// }
+//
+// // return typeof str === "string" && str.length >= 8;
+//
+// console.log(longString("abbazabb"));
 
 
 //write a function that takes in a floating point number and returns a number rounded down. it should return false for all inputs that arent numbers
@@ -173,13 +173,24 @@ console.log(longString("abbazabb"));
 //
 // console.log(roundDownNum(3.4));
 
-function roundDownFloat(num){
-    if(typeof num === 'number' && !isNaN(num)){
-        return Math.floor(num);
-    }else{
-        return false;
+// function roundDownFloat(num){
+//     if(typeof num === 'number' && !isNaN(num)){
+//         return Math.floor(num);
+//     }else{
+//         return false;
+//     }
+// }
+
+//write a function that cou ts from 1 to the number that the user passes in. For example if the argument passed in is 10, the function should log numbers 1 through 10
+
+function countNumber(num){
+    for(var i = 1; i <= num; i++){
+        console.log(i);
     }
+    return "Done counting";
 }
+
+// console.log(countNumber(10));
 
 //branch changes in github
 //git branch wed-warmup
