@@ -93,14 +93,14 @@ var admins = [
 
 console.log(admins);
 
-function adminList(arr){
+function adminList(admins){
     var adminArray = [];
     admins.forEach(function(admin,index) {
         if (admins[index].isAdmin === true){
              adminArray.unshift(admin.email);
         }
     });
-    console.log(admins);
+    console.log(adminArray);
 }
 
 //Create a function, makeSandwichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
