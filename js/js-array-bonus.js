@@ -70,11 +70,11 @@ console.log(addTwoArrays(names, names2));
 // Exercise 5. Write a function named getUniqueValues that takes in an array and returns the array without any duplicates
 // Example: getUniqueValues(["a", "b", "a", "b", "c", "c"]) should return ["a", "b", "c"]
 
-function getUniqueValues(arr){
-    var unique = arr.filter((item, i, ar) => arr.indexOf(item) === i);
-
-    return unique;
-}
+// function getUniqueValues(arr){
+//     var unique = arr.filter((item, i, ar) => arr.indexOf(item) === i);
+//
+//     return unique;
+// }
 
 console.log(getUniqueValues(["b", "a", "n", "a", "n", "a", "s"]));
 
