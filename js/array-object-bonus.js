@@ -97,7 +97,7 @@ function adminList(admins){
     var adminArray = [];
     admins.forEach(function(admin,index) {
         if (admins[index].isAdmin === true){
-             adminArray.push(admin.email);
+             adminArray.push(admin);
         }
     });
     console.log(adminArray);
