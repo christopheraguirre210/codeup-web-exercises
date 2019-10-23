@@ -183,29 +183,26 @@
 
 //write a function that cou ts from 1 to the number that the user passes in. For example if the argument passed in is 10, the function should log numbers 1 through 10
 
-function countNumber(num){
-    for(var i = 1; i <= num; i++){
-        console.log(i);
-    }
-    return "Done counting";
-}
+// function countNumber(num){
+//     for(var i = 1; i <= num; i++){
+//         console.log(i);
+//     }
+//     return "Done counting";
+// }
 
 // console.log(countNumber(10));
 
-//branch changes in github
-//git branch wed-warmup
-/*git branch *enter
-git checkout + name of branch
-and now you are in a new branch
- */
 
-/*
-git checkout -b 'new branch' = creates and puts you in the branch all at once.
-*/
+//write a function called createPersonObject that takes in a name (that is a string) and an age (that is a number) and returns a person object containing the name and age.
 
 
-//
-// function isEvens(num) {
-//     return parseFloat(num) % 2 === 0;
-// }
-// console.log(isEvens(-5));
+function createPersonObject(name,age){
+    var personObject = {};
+    personObject.name = "Chris";
+    personObject.age = 30;
+
+    return personObject;
+}
+
+console.log(createPersonObject());
+
