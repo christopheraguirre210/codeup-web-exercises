@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Mapbox Exercise</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My First Mapbox Exercise!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script>
+    mapboxgl.accessToken = mapboxToken;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-v9',
+        zoom: 15,
+        center: [-98.485352, 29.423618]
+        // pitch: 45
+    });
+
+    var markerOptions = {
+        color: "#038f07",
+        draggable: true
+    };
+
+    var marker = new mapboxgl.Marker(markerOptions)
+        .setLngLat([-98.478223, 29.424707])
+        .addTo(map);
+
+    var marker2 = new mapboxgl.Marker(markerOptions)
+        .setLngLat([-98.49271, 29.425338])
+        .addTo(map);
+
+    var marker3 = new mapboxgl.Marker(markerOptions)
+        .setLngLat([-98.485352, 29.423618])
+        .addTo(map);
+
+    function geocode(search, token) {
+        var baseUrl = 'https://api.mapbox.com';
+        var endPoint = '/geocoding/v5/mapbox.places/';
+        return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+            .then(function(res) {
+                return res.json();
+                // to get all the data from the request, comment out the following three lines...
+            }).then(function(data) {
+                return data.features[0].center;
+            });
+    }
+
+    geocode("1226 E Houston St, San Antonio, TX 78205", mapboxToken).then(function (result) {
+        console.log(result);
+        // map.setCenter(result);
+        // map.setZoom(15);
+    });
+    geocode("110 Soledad St, San Antonio, TX 78205", mapboxToken).then(function (result) {
+        console.log(result);
+        // map.setCenter(result);
+        // map.setZoom(15);
+    });
+    geocode("849 E Commerce St, San Antonio, TX 78205", mapboxToken).then(function (result) {
+        console.log(result);
+        // map.setCenter(result);
+        // map.setZoom(15);
+    });
+
+    var spaghettiPopup = new mapboxgl.Popup()
+        .setLngLat([-98.478223, 29.424707])
+        .setHTML("<em>Spaghetti Warehouse!!</em>")
+        .addTo(map);
+
+    var manhattanPopup = new mapboxgl.Popup()
+        .setLngLat([-98.49271, 29.425338])
+        .setHTML("<em>Mexican Manhattan!!</em>")
+        .addTo(map);
+
+    var mallPopup = new mapboxgl.Popup()
+        .setLngLat([-98.485352, 29.423618])
+        .setHTML("<em>RiverCenter Mall!!</em>")
+        .addTo(map);
+
+    marker.setPopup(spaghettiPopup,manhattanPopup,mallPopup);
+
+    marker2.setPopup(manhattanPopup);
+    //
+    marker3.setPopup(mallPopup);
+</script>
+<!--<script src="js/mapbox-geocoder-utils.js"></script>-->
+<!--<script src="js/mapbox-api-lec.js"></script>-->
+
+<!-- Custom JS -->
+
+</body>
+</html>
