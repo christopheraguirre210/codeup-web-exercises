@@ -195,30 +195,40 @@
 
 //write a function called createPersonObject that takes in a name (that is a string) and an age (that is a number) and returns a person object containing the name and age.
 
+//
+// function createPersonObject(name,age){
+//     var personObject = {};
+//     personObject.name = "Chris";
+//     personObject.age = 30;
+//
+//     return personObject;
+// }
+//
+// console.log(createPersonObject());
+//
+//
+// function fizzBuzz(num){
+//     for(var i = 1; i <= num; i++){
+//         if(i % 15 === 0){
+//             console.log("fizzbuzz");
+//         }else if(i % 5 === 0){
+//             console.log("buzz");
+//         }else if(i % 3 === 0){
+//             console.log("fizz");
+//         }else{
+//             console.log(i);
+//         }
+//     }
+// }
+//
+// console.log(fizzBuzz(100));
 
-function createPersonObject(name,age){
-    var personObject = {};
-    personObject.name = "Chris";
-    personObject.age = 30;
+//write a function that will return the number 5, but only when passed the string "five"
 
-    return personObject;
-}
-
-console.log(createPersonObject());
-
-
-function fizzBuzz(num){
-    for(var i = 1; i <= num; i++){
-        if(i % 15 === 0){
-            console.log("fizzbuzz");
-        }else if(i % 5 === 0){
-            console.log("buzz");
-        }else if(i % 3 === 0){
-            console.log("fizz");
-        }else{
-            console.log(i);
-        }
+function numFive(five){
+    if(five === 'five'){
+        return 5;
     }
 }
 
-console.log(fizzBuzz(100));
+console.log(numFive('five'));
