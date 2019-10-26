@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// <!--    Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner appear in outer. The best solution makes only a single "linear" pass of both arrays, taking advantage of the fact that both arrays are already in sorted order.-->
+
+// linearIn([1, 2, 4, 6], [2, 4]) → true
+// linearIn([1, 2, 4, 6], [2, 3, 4]) → false
+// linearIn([1, 2, 4, 4, 6], [2, 4]) → true
+//
+// function linearIn(outer, inner) {
+//     for (var i = 0; i < inner.length; i++) {
+//         for (var o = 0; o < outer.length; i++) {
+//             if (inner[i] === outer[o]) {
+//                 continue;
+//             }
+//         }
+//     }
+}
+
+
+function compareArrays(array2, array1){
+    for(var i = 0; i <array1.length; i++){
+        for(var o = 0; o <array2.length; o++){
+            if(array1[i] === array2[o]){
+                break;
+            }
+            if(array2[o] === array2[array2.length - 1]){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+// Return true if the array contains, somewhere, three increasing adjacent numbers like .... 4, 5, 6, ... or 23, 24, 25.
+
+// tripleUp([1, 4, 5, 6, 2]) → true
+// tripleUp([1, 2, 3]) → true
+// tripleUp([1, 2, 4]) → false
+
+function tripleUp(nums){
+    for (var i = 0; i < nums.length; i++){
+
+    }
+}
+
+</script>
+
+</body>
+</html>
