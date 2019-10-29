@@ -27,10 +27,21 @@
     $(document).ready(function () {
         $('*').css('text-align', 'center');
         $('li').css('list-style', 'none');
-        $('li').css('font-size', '20px');
-        $('h1, p, li').css('background-color', 'yellow');
-        var contents = $('h1').html();
-        alert(contents);
+
+        $('h1').click(function () {
+            $(this).css('background-color', 'lime');
+        });
+        $('p').dblclick(function () {
+            $('p').css('font-size', '18px');
+        });
+        //you can also use 'h2' instead of this if it's more comfortable and easier to remember
+        $('li').hover(function () {
+            $(this).css('color', 'red');
+        },
+            function () {
+                $(this).css('color', 'black');
+            }
+        )
 
 
     });
