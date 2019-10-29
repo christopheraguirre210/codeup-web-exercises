@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+
 // <!--    Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner appear in outer. The best solution makes only a single "linear" pass of both arrays, taking advantage of the fact that both arrays are already in sorted order.-->
 
 // linearIn([1, 2, 4, 6], [2, 4]) → true
@@ -48,6 +49,31 @@ function tripleUp(nums){
 
     }
 }
+
+
+// Write a function named padArray. It should accept 3 arguments:
+// an array, a length, and an element to fill with. If the length of
+// the passed array is less than the passed length, the function should add
+// the element to fill with to the end of the array until the array is the desired length
+// and return the array. If the length of the passed array is greater than or equal to the
+// passed length, the function should just return the array.
+
+function padArray(inArray, inLength, inElement){
+    var newArray = [];
+
+    if(inArray.length >= inLength){
+        newArray = inArray;
+    }else{
+
+        for (var i = 0; i <= (inLength - inArray.length) + 1; i++) {
+            inArray.push(inElement);
+        }
+        newArray = inArray;
+    }
+
+    return newArray;
+}
+
 
 </script>
 
