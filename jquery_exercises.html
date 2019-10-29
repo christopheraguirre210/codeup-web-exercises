@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1 class="headers">Jquery exercise</h1>
+<h1 class="codeup">Jquery exercise</h1>
 <p id="first-p"><em>This is going to be a tricky subject, but im sure it will be beneficial!</em></p>
 <div id="div1">
     <ul>
@@ -14,8 +14,10 @@
         <li><strong>I</strong> like music</li>
     </ul>
 </div>
-<h2 class="headers">Who loves Orange Soda?!</h2>
+<h2 class="codeup">Who loves Orange Soda?!</h2>
 <p id="second-p">Kel loves orange soda!</p>
+<h3>Notice</h3>
+<p><em>Let's just paint some friendly little bushes over here</em></p>
 
 
 <script src="js/jquery-2.2.4.js"></script>
@@ -23,9 +25,9 @@
 
 
     $(document).ready(function () {
-        $('h1').css('text-align', 'center');
-        $('#second-p').css('text-align', 'center');
-        $('#div1').css('background-color', 'cyan');
+        $('.codeup').css('border', '1px dotted red');
+        $('*').css('text-align', 'center');
+        $('li').css('list-style', 'none');
 
 
     });
