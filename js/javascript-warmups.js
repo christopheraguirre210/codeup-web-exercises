@@ -269,3 +269,43 @@ function mostOranges(carts){
     })
 }
 
+//write a function that accepts an array of student objects and returns an array of student objects that are not registered
+
+var students = [
+    {
+        name: "Mary",
+        grade: 10,
+        gpa: 3.7,
+        isRegistered: true
+    },
+    {
+        name: "Tim",
+        grade: 12,
+        gpa: 3.2,
+        isRegistered: false
+    },
+    {
+        name: "Ellie",
+        grade: 9,
+        gpa: 4.0,
+        isRegistered: false
+    },
+    {
+        name: "Alex",
+        grade: 10,
+        gpa: 3.9,
+        isRegistered: true
+    }
+];
+
+function checkRegistered(studentArray){
+    var newArray = [];
+    studentArray.forEach(function (student) {
+        if(!student.isRegistered){
+            newArray.push(student)
+        }
+    });
+    return newArray;
+}
+
+
