@@ -224,88 +224,132 @@
 // console.log(fizzBuzz(100));
 
 //write a function that will return the number 5, but only when passed the string "five"
+//
+// function numFive(five){
+//     if(five === 'five'){
+//         return 5;
+//     }
+// }
+//
+// console.log(numFive('five'));
+//
+// //write a function that will return the shopping cart object with the most oranges
+//
+// var shoppingCarts = [
+//     {
+//         apples: 8,
+//         bananas: 2,
+//         oranges: 4,
+//         grapes: 24
+//     }, {
+//         apples: 3,
+//         bananas: 6,
+//         oranges: 8,
+//         grapes: 12
+//     } , {
+//         apples: 0,
+//         bananas: 12,
+//         oranges: 0,
+//         grapes: 0
+//     } , {
+//         apples: 4,
+//         bananas: 0,
+//         oranges: 8,
+//         grapes: 10
+//     }
+// ];
+//
+// function mostOranges(carts){
+//     carts.forEach(function (cart) {
+//         var winner = {};
+//         if(cart.oranges > winner.oranges){
+//             winner = cart;
+//         }
+//         return winner;
+//     })
+// }
+//
+// //write a function that accepts an array of student objects and returns an array of student objects that are not registered
+//
+// var students = [
+//     {
+//         name: "Mary",
+//         grade: 10,
+//         gpa: 3.7,
+//         isRegistered: true
+//     },
+//     {
+//         name: "Tim",
+//         grade: 12,
+//         gpa: 3.2,
+//         isRegistered: false
+//     },
+//     {
+//         name: "Ellie",
+//         grade: 9,
+//         gpa: 4.0,
+//         isRegistered: false
+//     },
+//     {
+//         name: "Alex",
+//         grade: 10,
+//         gpa: 3.9,
+//         isRegistered: true
+//     }
+// ];
+//
+// function checkRegistered(studentArray){
+//     var newArray = [];
+//     studentArray.forEach(function (student) {
+//         if(!student.isRegistered){
+//             newArray.push(student)
+//         }
+//     });
+//     return newArray;
+// }
 
-function numFive(five){
-    if(five === 'five'){
-        return 5;
-    }
-}
-
-console.log(numFive('five'));
-
-//write a function that will return the shopping cart object with the most oranges
-
-var shoppingCarts = [
+var hamsters = [
     {
-        apples: 8,
-        bananas: 2,
-        oranges: 4,
-        grapes: 24
-    }, {
-        apples: 3,
-        bananas: 6,
-        oranges: 8,
-        grapes: 12
+        name: "Hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: "male",
+        dateOfBirth: "August 6"
     } , {
-        apples: 0,
-        bananas: 12,
-        oranges: 0,
-        grapes: 0
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: "female",
+        dateOfBirth: "July 10"
     } , {
-        apples: 4,
-        bananas: 0,
-        oranges: 8,
-        grapes: 10
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: "male",
+        dateOfBirth: "May 3"
+    } , {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: "male",
+        dateOfBirth: "Spetember 21"
+    } , {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', "pink"],
+        gender: "male",
+        dateOfBirth: "January 14"
     }
-];
+    ];
 
-function mostOranges(carts){
-    carts.forEach(function (cart) {
-        var winner = {};
-        if(cart.oranges > winner.oranges){
-            winner = cart;
-        }
-        return winner;
-    })
-}
+//write a javascript function that will return an array of hamster objects sorted by height in ascending order.
 
-//write a function that accepts an array of student objects and returns an array of student objects that are not registered
-
-var students = [
-    {
-        name: "Mary",
-        grade: 10,
-        gpa: 3.7,
-        isRegistered: true
-    },
-    {
-        name: "Tim",
-        grade: 12,
-        gpa: 3.2,
-        isRegistered: false
-    },
-    {
-        name: "Ellie",
-        grade: 9,
-        gpa: 4.0,
-        isRegistered: false
-    },
-    {
-        name: "Alex",
-        grade: 10,
-        gpa: 3.9,
-        isRegistered: true
-    }
-];
-
-function checkRegistered(studentArray){
-    var newArray = [];
-    studentArray.forEach(function (student) {
-        if(!student.isRegistered){
-            newArray.push(student)
-        }
+function hamsterOrder(hamster){
+    return  hamster.sort(function (a,b) {
+        return a.heightInMM - b.heightInMM;
     });
-    return newArray;
 }
+
+console.log(hamsterOrder(hamsters));
 
 

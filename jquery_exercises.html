@@ -25,6 +25,24 @@
 
 
     $(document).ready(function () {
+        // $('*').css('text-align', 'center');
+        // $('li').css('list-style', 'none');
+        // $('li').css('font-size', '20px');
+        // $('h1, p, li').css('background-color', 'yellow');
+        // var contents = $('h1').html();
+        // alert(contents);
+        //
+        // $('h1').dblclick(function () {
+        //     alert("That's not a button, Silly goose!")
+        // });
+        // //you can also use 'h2' instead of this if it's more comfortable and easier to remember
+        // $('h2').hover(function () {
+        //     $(this).css('background-color', 'violet');
+        // },
+        //     function () {
+        //         $(this).css('background-color', 'pink');
+        //     }
+        // )
         $('*').css('text-align', 'center');
         $('li').css('list-style', 'none');
 
@@ -36,12 +54,19 @@
         });
         //you can also use 'h2' instead of this if it's more comfortable and easier to remember
         $('li').hover(function () {
-            $(this).css('color', 'red');
-        },
+                $(this).css('color', 'red');
+            },
             function () {
                 $(this).css('color', 'black');
             }
         )
+        $('h2').hover(function () {
+                $(this).css('background-color', 'violet');
+            },
+                function () {
+                    $(this).css('background-color', 'pink');
+                }
+            )
 
 
     });
