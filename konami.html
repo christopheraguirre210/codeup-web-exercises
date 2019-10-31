@@ -7,7 +7,6 @@
 
 <div>
 <img src="images/blank-screen.png" alt="" id="cheatOutcome" style="background-repeat: no-repeat; background-position: center; background-size: contain">
-
 </div>
 
 
@@ -44,32 +43,24 @@
         Enter: 'enter'
     };
 
-    // the 'official' Konami Code sequence
     var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
     var mkCode = ['a','b','a','c','a','b','b'];
     var diddyKongCode = ['f','r','e','e','f','r','u','i','t'];
 
 
-    // a variable to remember the 'position' the user has reached so far.
     var konamiCodePosition = 0;
     var mkCodePosition = 0;
     var diddyKongPosition = 0;
 
 
-    // add keydown event listener
     document.addEventListener('keydown', function(e) {
-        // get the value of the key code from the key map
         var key = allowedKeys[e.key];
-        // get the value of the required key from the konami code
         var requiredKey = konamiCode[konamiCodePosition];
 
-        // compare the key with the required key
         if (key == requiredKey) {
 
-            // move to the next key in the konami code sequence
             konamiCodePosition++;
 
-            // if the last key is reached, activate cheats
             if (konamiCodePosition == konamiCode.length) {
                 activateKonami();
                 konamiCodePosition = 0;
@@ -89,20 +80,12 @@
     }
 
 
-    // add keydown event listener
     document.addEventListener('keydown', function(e) {
-        // get the value of the key code from the key map
         var key = allowedKeys[e.key];
-        // get the value of the required key from the konami code
         var requiredKey = mkCode[mkCodePosition];
 
-        // compare the key with the required key
         if (key == requiredKey) {
-
-            // move to the next key in the konami code sequence
             mkCodePosition++;
-
-            // if the last key is reached, activate cheats
             if (mkCodePosition == mkCode.length) {
                 activateMK();
                 mkCodePosition = 0;
@@ -122,18 +105,10 @@
     }
 
     document.addEventListener('keydown', function(e) {
-        // get the value of the key code from the key map
         var key = allowedKeys[e.key];
-        // get the value of the required key from the konami code
         var requiredKey = diddyKongCode[diddyKongPosition];
-
-        // compare the key with the required key
         if (key == requiredKey) {
-
-            // move to the next key in the konami code sequence
             diddyKongPosition++;
-
-            // if the last key is reached, activate cheats
             if (diddyKongPosition == diddyKongCode.length) {
                 activateDK();
                 diddyKongPosition = 0;
@@ -145,10 +120,8 @@
 
     function activateDK() {
         document.getElementById("cheatOutcome").style.backgroundImage = "url('images/dkrace.gif')";
-
         var audio = new Audio('sounds/diddykong.mp3');
         audio.play();
-
         alert("Diddy Kong Racing!");
     }
 
