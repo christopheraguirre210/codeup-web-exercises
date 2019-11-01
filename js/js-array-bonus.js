@@ -88,10 +88,10 @@ console.log(names2);
 console.log(reverseArray(names2));
 
 // Exercise 7. Write a function named getRandomQuote().
-//   Inside of the function, create an array of strings where each string is a quote or thought you find inspirational
-//   getRandomQuote should generate a random number between 0 and the array's length minus 1
-//   use the randomly generated number as your index
-//   return a random quote.
+// // //   Inside of the function, create an array of strings where each string is a quote or thought you find inspirational
+// // //   getRandomQuote should generate a random number between 0 and the array's length minus 1
+// // //   use the randomly generated number as your index
+// // //   return a random quote.
 
 var quotes = ["who knows best?, me!", "if it don't make dollars, it don't make sense", "who loves orange soda?, kel loves orange soda"];
 function getRandomQuote(arr){
