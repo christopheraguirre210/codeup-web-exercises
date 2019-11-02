@@ -353,3 +353,11 @@ function hamsterOrder(hamster){
 console.log(hamsterOrder(hamsters));
 
 
+//List out three of your favorite web applications. Explain why.
+
+// Amazon
+// any photo editor
+//Instagram
+// I don't really use a lot of the internet so I don't really know how to answer this.
+
+

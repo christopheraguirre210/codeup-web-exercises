@@ -18,12 +18,19 @@
         .blue {
             color: #3B94D9;
         }
+        #container {
+            display: flex;
+            justify-content: center;
+            margin-right: 10em;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+            position: center;
+        }
     </style>
 </head>
 <body>
-<img src="images/parks-and-rec.jpeg" alt="">
-<p style="text-align: center; margin-top: -80px; font-family: 'Courgette', cursive; font-size: larger; font-style: oblique;">National</p>
-<br>
 <header><h1><em>Frequently Asked Questions</em></h1></header>
 
 
@@ -104,9 +111,28 @@
 
 <button id='highlighter' type="button">Click Me</button>
 
+<ul id="container">
+    <div id="frame1">
+        <img src="images/chicago-city.jpg" alt="" style="border: 3px solid blueviolet">
+    </div>
+    <div id="frame2">
+        <img src="images/ocean-sunset.jpg" alt="" style="border: 3px solid deepskyblue">
+    </div>
+    <div id="frame3">
+        <img src="images/hallway.jpeg" alt="" style="border: 3px solid blueviolet">
+    </div>
+</ul>
 
+
+<div class="pic-buttons">
+<button type="button" id="btn1">switch right</button>
+<!--<button type="button" id="btn2">switch</button>-->
+<!--<button type="button" id="btn3">switch left</button>-->
+</div>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
+
+
 
     $('img').css('margin-left', '43%');
 
@@ -140,6 +166,21 @@
         $(this).parent().children().first().toggleClass('blue');
     });
 
+    var city = '<img src="images/chicago-city.jpg" alt="">';
+    var beach = '<img src="images/ocean-sunset.jpg" alt="">';
+    var hallway = '<img src="images/hallway.jpeg" alt="">';
+
+    $('#container').children().first().click(function() {
+        $(this).before($('#container').children().first().next());
+    });
+
+    // $('#btn1').click(function(){
+    //     var holdThis = $(city).attr('img');
+    //     var takeThis = $(beach).attr('img');
+    //     $(city).attr('img', takeThis);
+    //     $(beach).attr('img', holdThis);
+    // });
+
     // Create 3 divs that each look like a picture frame. Each one should have a unique background image and a button underneath that swaps the image from the frame. Use the traversing functions of jQuery to accomplish this.
     //
     //     The rules are the following:
@@ -147,6 +188,28 @@
     //     The left frame swaps to the right and takes the image from the frame in the center.
     //     The center frame swaps randomly to either the left or right.
     //     The right frame swaps to the left and takes the image from the frame in the center.
+    /*
+        <div id="container">
+            <div id="pic1"><img src="images/chicago-city.jpg" alt="" style="border: 3px solid blueviolet"></div>
+            <div id="pic2"><img src="images/ocean-sunset.jpg" alt="" style="border: 3px solid deepskyblue"></div>
+            <div id="pic3"><img src="images/hallway.jpeg" alt="" style="border: 3px solid blueviolet"></div>
+        </div>
+        <div class="pic-buttons">
+            <button type="button" id="btn1">switch right</button>
+            <button type="button" id="btn2">switch</button>
+            <button type="button" id="btn3">switch left</button>
+        </div>
+     */
+
+    // $('#btn1').click(function(){
+    //     $('#container').children().first().toggleClass('.pic2');
+    // });
+
+
+
+
+
+
 </script>
 </body>
 </html>
