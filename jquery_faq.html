@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>FAQ Exercise</title>
     <style>
         .invisible {
             visibility: hidden;
@@ -15,24 +15,36 @@
         .bolden {
             font-weight: bold;
         }
+
         .blue {
             color: #3B94D9;
         }
+
         #container {
             display: flex;
             justify-content: center;
             margin-right: 10em;
         }
+
+        #sign-up {
+            display: none;
+        }
+
         img {
             height: 300px;
             width: 300px;
             position: center;
         }
+
+        .hidden {
+            display:none;
+        }
     </style>
 </head>
 <body>
-<header><h1><em>Frequently Asked Questions</em></h1></header>
-
+<div id="header">
+    <h1>Would you like to sign up for our newsletter?<span>x</span></h1>
+</div>
 
 <dl>
     <dt>Who is the director of the National Park Service?</dt>
@@ -86,7 +98,7 @@
 <br>
 
 <h3>Yosemite National Park</h3>
-<ul>
+<ul class="hidden">
     <li>Established‎: ‎October 1, 1890</li>
     <li>Nearest city‎: ‎Mariposa, California</li>
     <li>Yosemite National Park is in California’s Sierra Nevada mountains.</li>
@@ -95,19 +107,21 @@
     </li>
 </ul>
 <h3>Zion National Park</h3>
-<ul>
+<ul class="hidden">
     <li>Established‎: ‎November 19, 1919</li>
     <li>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs</li>
     <li>Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River.</li>
     <li>The river flows to the Emerald Pools, which have waterfalls and a hanging garden.</li>
 </ul>
 <h3>Yellowstone National Park</h3>
-<ul>
+<ul class="hidden">
     <li>Established‎: ‎March 1, 1872</li>
     <li>Governing body‎: ‎U.S. National Park Service</li>
     <li>Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.</li>
     <li>Mostly in Wyoming, the park spreads into parts of Montana and Idaho too.</li>
 </ul>
+
+<h2 id="sign-up">Register for our site!!!</h2>
 
 <button id='highlighter' type="button">Click Me</button>
 
@@ -125,13 +139,12 @@
 
 
 <div class="pic-buttons">
-<button type="button" id="btn1">switch right</button>
-<!--<button type="button" id="btn2">switch</button>-->
-<!--<button type="button" id="btn3">switch left</button>-->
+    <button type="button" id="btn1">switch right</button>
+    <!--<button type="button" id="btn2">switch</button>-->
+    <!--<button type="button" id="btn3">switch left</button>-->
 </div>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-
 
 
     $('img').css('margin-left', '43%');
@@ -139,6 +152,7 @@
     $('header').css('text-align', 'center');
 
     $('dd').addClass('invisible');
+    $('.hidden').hide();
 
     $('.secret').click(function (event) {
         $('dd').toggleClass('invisible');
@@ -155,6 +169,11 @@
         });
     });
 
+    $('h3').click(function (event) {
+        $(this).next().slideToggle();
+    });
+
+    $('#sign-up').delay(8000).fadeIn();
 
     $('h3').click(function () {
         $(this).next().children().toggleClass('bolden');
@@ -166,11 +185,15 @@
         $(this).parent().children().first().toggleClass('blue');
     });
 
+    $('span').click(function () {
+        $('#header').hide();
+    });
+
     var city = '<img src="images/chicago-city.jpg" alt="">';
     var beach = '<img src="images/ocean-sunset.jpg" alt="">';
     var hallway = '<img src="images/hallway.jpeg" alt="">';
 
-    $('#container').children().first().click(function() {
+    $('#container').children().first().click(function () {
         $(this).before($('#container').children().first().next());
     });
 
@@ -206,10 +229,8 @@
     // });
 
 
-
-
-
-
 </script>
+
+
 </body>
 </html>
