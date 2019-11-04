@@ -360,4 +360,38 @@ console.log(hamsterOrder(hamsters));
 //Instagram
 // I don't really use a lot of the internet so I don't really know how to answer this.
 
+//write a javascript function that will take in the whole numbers 1 - 10, and return the number spelled out as a string.(i.e. 1 returns 'one').
+
+function numToString(num){
+    switch (num){
+        case 1:
+            return 'one';
+        case 2:
+            return 'two';
+        case 3:
+            return 'three';
+        case 4:
+            return 'four';
+        case 5:
+            return 'five';
+        case 6:
+            return 'six';
+        case 7:
+            return 'seven';
+        case 8:
+            return 'eight';
+        case 9:
+            return 'nine';
+        case 10:
+            return 'ten';
+        default:
+            return false;
+    }
+}
+
+var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+console.log(numToString(randomNumber));
+
+
 
