@@ -31,6 +31,19 @@
         ],
         "price": 10
     }, {
-    ""
+    "title": "Shovel",
+    "quantity": 15,
+    "categories": [
+        "tool",
+        "outside"
+    ],
+    "price": 35
+    }, {
+    "title": "Nails",
+    "quantity": 200,
+    "categories": [
+        "accessories"
+    ],
+    "price": ".25"
 }
 ]
