@@ -4,11 +4,11 @@
     <title>Online Store</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-info" style="background-image: url('images/good-guy-tools.jpg')">
 
-<h1 style="text-align: center">My Tool Store</h1>
-<div id="main">
-    <table id="products" class="table">
+<h1 style="text-align: center" class="btn-primary">My Tool Store</h1>
+<div id="main" >
+    <table id="products" class="table table-bordered table-dark">
         <thead class="thead-dark">
         <tr>
             <th>Title</th>
@@ -72,7 +72,8 @@
 
 
     $('#reload').click(function () {
-        location.reload(true);
+        $('#insertProducts').html("");
+        generateTools();
     });
 
 })();
