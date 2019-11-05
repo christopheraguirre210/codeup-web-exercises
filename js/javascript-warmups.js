@@ -393,5 +393,19 @@ var randomNumber = Math.floor(Math.random() * 10) + 1;
 
 console.log(numToString(randomNumber));
 
+//write a javascript function that will return 'You're welcome', but only when passed a JavaScript object with a property of gratitude that has the value of 'Thank you'.
+
+var myObject = {
+    gratitude: "Thank you"
+};
+
+function ywPhrase(obj){
+    if(obj.gratitude === "Thank you"){
+        return "You're welcome"
+    }
+}
+
+console.log(ywPhrase(myObject));
+
 
 
