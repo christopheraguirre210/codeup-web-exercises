@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+<!--    mapbox CSS-->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+<!--    custom CSS-->
+    <link rel="stylesheet" href="css/weather-map.css">
+</head>
+<body>
+<div id="map">
+
+</div>
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<!--mapbox JS-->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<!--Materialize script goes here if you want-->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/keys.js"></script>
+<!--Additional stuff-->
+<script>
+    var darkSky = $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/29.4241,-98.4936");
+
+
+    darkSky.done(function(data){
+        console.log(data.daily.data[0]);
+        var todayTempHigh = data.daily.data[0].temperatureHigh;
+        var todayTempLow = data.daily.data[0].temperatureLow;
+        console.log(todayTempHigh);
+        console.log(todayTempLow);
+    });
+
+    mapboxgl.accessToken = mapboxToken;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-v9',
+        zoom: 15,
+        center: [-98.485352, 29.423618]
+        // pitch: 45
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
