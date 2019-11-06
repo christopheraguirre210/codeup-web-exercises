@@ -30,7 +30,7 @@ h3 {
 }
 #todayWeather {
     background-image: url('../icons/animated/rainy-3.svg');
-    background-size: contain;
-    background-position: center;
+    background-size: 100px;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
