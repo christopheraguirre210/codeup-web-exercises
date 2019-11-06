@@ -21,23 +21,30 @@
 <h1 class="text-center">Weather Application</h1>
 
 
-
+<div id="main">
 <ul style="display: flex; list-style-type: none" id="card-list">
     <li>
-        <h3>Today's Weather</h3>
+        <div class="card-header" style="background-color: #0fb784">
+        <h4>Today's Weather</h4>
+        </div>
         <div class="card" id="todayWeather"></div>
     </li>
 
     <li>
-        <h3>Tomorrow's Weather</h3>
-        <div class="card" id="tmrwWeather"></div>
+        <div class="card-header" style="background-color: #0fb784">
+        <h4>Tomorrow's Weather</h4>
+        </div>
+        <div class="card" id="tmrwWeather" style="background-image: url('images/weather-div.png'); background-size: cover; background-repeat: no-repeat"></div>
     </li>
 
     <li>
-        <h3>Day After Tomorrow's Weather</h3>
-        <div class="card" id="dayAfterWeather"></div>
+        <div class="card-header" style="background-color: #0fb784">
+        <h4>Day After Tomorrow</h4>
+        </div>
+        <div class="card" id="dayAfterWeather" style="background-image: url('images/weather-div.png'); background-size: cover; background-repeat: no-repeat"></div>
     </li>
 </ul>
+</div>
 <div id="map">
 
 </div>
@@ -73,26 +80,30 @@
     //     // console.log(todayTempLo);
     // });
 
+    // var weatherType = {
+    //     Clea
+    // };
+
 
 
     darkSky.done(function (data) {
         var todaySummary = data.daily.data[0].summary;
-        var todayTempHi = data.daily.data[0].temperatureHigh;
-        var todayTempLo = data.daily.data[0].temperatureLow;
+        var todayTempHi = parseInt(data.daily.data[0].temperatureHigh) + "°";
+        var todayTempLo = parseInt(data.daily.data[0].temperatureLow) + "°";
         var todayhumidity = data.daily.data[0].humidity;
         var todayWind = data.daily.data[0].windSpeed;
         var todayPressure = data.daily.data[0].pressure;
 
         var tmrwSummary = data.daily.data[1].summary;
-        var tmrwTempHi = data.daily.data[1].temperatureHigh;
-        var tmrwTempLo = data.daily.data[1].temperatureLow;
+        var tmrwTempHi = parseInt(data.daily.data[1].temperatureHigh) + "°";
+        var tmrwTempLo = parseInt(data.daily.data[1].temperatureLow) + "°";
         var tmrwHumidity = data.daily.data[1].humidity;
         var tmrwWind = data.daily.data[1].windSpeed;
         var tmrwPressure = data.daily.data[1].pressure;
 
         var dayAfterSummary = data.daily.data[2].summary;
-        var dayAfterTempHi = data.daily.data[2].temperatureHigh;
-        var dayAfterTempLo = data.daily.data[2].temperatureLow;
+        var dayAfterTempHi = parseInt(data.daily.data[2].temperatureHigh) + "°";
+        var dayAfterTempLo = parseInt(data.daily.data[2].temperatureLow) + "°";
         var dayAfterHumidity = data.daily.data[2].humidity;
         var dayAfterWind = data.daily.data[2].windSpeed;
         var dayAfterPressure = data.daily.data[2].pressure;
@@ -121,7 +132,51 @@
         weatherCard3 += ("<h5> Pressure: " + dayAfterPressure + "</h5>");
         $("#dayAfterWeather").append(weatherCard3);
 
+        console.log(data);
     });
+
+    var weatherType = [
+        {
+            "summary": "clear-day",
+            "icon": "url('icons/animated/day')"
+        },
+        {
+            "summary": "clear-night",
+
+        },
+        {
+            "summary": "rain",
+            "icon": "url('../icons/animated/rainy-4.svg')"
+        },
+        {
+            "summary": "snow",
+        },
+        {
+            "summary": "sleet",
+        },
+        {
+            "summary": "wind",
+        },
+        {
+            "summary": "fog",
+        },
+        {
+            "summary": "cloudy",
+        },
+        {
+            "summary": "partly-cloudy-day",
+        },
+        {
+            "summary": "partly-cloudy-night",
+        }
+    ];
+
+    function iconPlace(){
+        if(data.daily.data[0].icon === weatherType){
+            
+        }
+    };
+
 
     // darkSky.done(function(data) {
     //     var todayWeather = "<h4>

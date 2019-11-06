@@ -21,6 +21,16 @@ h3 {
 .card {
     border: 3px solid steelblue;
 }
-map {
-    border: 2px #2b3e7a;
+.card-header {
+    color: mistyrose;
+}
+#main {
+    color: #111111;
+    text-align: center;
+}
+#todayWeather {
+    background-image: url('../icons/animated/rainy-3.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
