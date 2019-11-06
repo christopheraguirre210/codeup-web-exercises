@@ -20,17 +20,17 @@ h3 {
 }
 .card {
     border: 3px solid steelblue;
+    border-radius: 10px;
 }
 .card-header {
     color: mistyrose;
+    border-radius: 10px;
 }
 #main {
     color: #111111;
     text-align: center;
 }
-#todayWeather {
-    background-image: url('../icons/animated/rainy-3.svg');
-    background-size: 100px;
-    background-position: bottom;
-    background-repeat: no-repeat;
+.card-body {
+    margin: 0;
 }
+
