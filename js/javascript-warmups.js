@@ -389,24 +389,34 @@ function numToString(num){
     }
 }
 
-var randomNumber = Math.floor(Math.random() * 10) + 1;
+var randomNumber = Math.floor(Math.random() * 2) + 1;
 
-console.log(numToString(randomNumber));
+// console.log(numToString(randomNumber));
+//
+// //write a javascript function that will return 'You're welcome', but only when passed a JavaScript object with a property of gratitude that has the value of 'Thank you'.
+//
+// var myObject = {
+//     gratitude: "Thank you"
+// };
+//
+// function ywPhrase(obj){
+//     if(obj.gratitude === "Thank you"){
+//         return "You're welcome"
+//     }
+// }
 
-//write a javascript function that will return 'You're welcome', but only when passed a JavaScript object with a property of gratitude that has the value of 'Thank you'.
+// console.log(ywPhrase(myObject));
 
-var myObject = {
-    gratitude: "Thank you"
-};
 
-function ywPhrase(obj){
-    if(obj.gratitude === "Thank you"){
-        return "You're welcome"
-    }
+//write a javascript function that returns a random boolean
+
+function randoBoolean(num){
+    return num === 1;
 }
 
-console.log(ywPhrase(myObject));
+//return Boolean(Math.floor(Math.random() * 2));
 
+console.log(randoBoolean(randomNumber));
 
 
 

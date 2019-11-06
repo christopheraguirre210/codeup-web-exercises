@@ -1,3 +1,10 @@
+body {
+    background-color: #8CCBF7;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
 #map {
     /* the width and height may be set to any size */
     width: 85%;
@@ -5,5 +12,15 @@
     display: flex;
     justify-items: center;
     margin-left: 8.5em;
-    margin-top: 35em;
+    margin-top: 10em;
+}
+#card-list {
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+.card {
+    border: 3px solid steelblue;
+}
+map {
+    border: 2px #2b3e7a;
 }
