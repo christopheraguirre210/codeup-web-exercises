@@ -10,6 +10,8 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
 <!--    custom CSS-->
     <link rel="stylesheet" href="css/weather-map.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
     <style>
         .card {
             height: 250px;
@@ -27,41 +29,30 @@
         <div class="card-header" style="background-color: #0fb784;border-radius: 10px">
         <h4>Today's Weather</h4>
         </div>
-        <div id="todayWeather" style="background-color: #5FBFD8"></div>
+        <div id="todayWeather"></div>
     </li>
 
     <li>
         <div class="card-header" style="background-color: #0fb784;border-radius: 10px">
         <h4>Tomorrow's Weather</h4>
         </div>
-        <div id="tmrwWeather" style="background-color: #5FBFD8"></div>
+        <div id="tmrwWeather"></div>
     </li>
 
     <li>
         <div class="card-header" style="background-color: #0fb784; border-radius: 10px">
         <h4>Day After Tomorrow</h4>
         </div>
-        <div id="dayAfterWeather" style="background-color: #5FBFD8"></div>
+        <div id="dayAfterWeather"></div>
     </li>
 </ul>
 </div>
-<input type="text" placeholder="Check the weather"><br>
-<button type="submit">Where to?</button>
+<div class="button"><input type="text" placeholder="Check the weather"><button type="submit">Where to?</button></div>
+
 <div id="map">
 
 </div>
-<div id="coordinates">
-
-</div>
-
-<!--jquery-->
-<!--materialize-->
-<!--mapbox api-->
-<!--mapbox geocoder-->
-<!--keys js-->
-<!--custom js-->
-
-
+<footer><h2>Thank you for trusting CodeUp Weather!<img src="images/codeupsign.png" alt=""></h2></footer>
 <script src="js/jquery-2.2.4.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <!--materialize could go here if you want-->
@@ -116,7 +107,7 @@
     mapboxgl.accessToken = mapboxToken;
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
+        style: 'mapbox://styles/christopheraguirre210/ck2p39yeu1a061cks2xymzrtb',
         zoom: 10,
         center: [-98.4936, 29.4241]
         // pitch: 45
@@ -134,12 +125,8 @@
     var coordinates = $('#coordinates');
 
 
-
-    //`````````````````````````````````
-
     function onDragEnd(){
         var lngLat = marker.getLngLat();
-
 
     }
     marker.on('dragend', function () {
@@ -148,10 +135,6 @@
         $('#tmrwWeather').html("");
         $('#dayAfterWeather').html("");
         getWeather();
-        // console.log(lngLat);
-        // console.log(lngLat.lng);
-        // console.log(lngLat.lat);
-        // $('#coordinates').html(lngLat[0]);
     });
 
     marker.on('dragend', onDragEnd);
