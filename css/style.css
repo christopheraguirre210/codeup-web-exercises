@@ -71,7 +71,12 @@ hr.style-eight:after {
     padding: 0 0.25em;
     background: #333333;
 }
-
+.column {
+    max-height: 500px;
+}
+img {
+    position: center;
+}
 .header {
     font-family: 'Courgette', cursive;
     text-decoration: underline;
@@ -141,7 +146,7 @@ nav p {
 }
 
 nav ul {
-    float: left;
+    /*float: left;*/
 }
 
 nav ul li {
