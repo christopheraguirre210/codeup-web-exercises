@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Review</title>
+    <style>
+        .highlighter {
+            background-color: purple;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -31,7 +39,33 @@
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-    var myList = document.getElementById('favorite-food');
+
+    $('#add-to-list').click(function () {
+        var newItem = $('#input').val();
+        var addition = '<li>' + newItem + '</li>';
+        $('#favorite-food').append(addition);
+    });
+
+    $('#change-me').dblclick(function () {
+            $(this).toggleClass('highlighter');
+    });
+    $('#change-cohort').click(function () {
+        var newName = $('#cohort-name').val();
+        $('#my-cohort').html(newName);
+    });
+    $('#highlight').click(function () {
+        $('#my-cohort').toggleClass('highlight');
+    });
+
+
+    function changeColor(){
+        $(".container").css({
+            "background-color" : "pink"
+        });
+    }
+
+    setTimeout(changeColor, 3000);
+
 
 
 
