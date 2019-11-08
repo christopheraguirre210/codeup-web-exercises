@@ -26,6 +26,8 @@ hr.style-eight {
     border-top: medium double #333;
     color: #ffffff;
     text-align: center;
+    width: 50%;
+    margin-left: 25%;
 }
 hr.style-eight:after {
     content: "CA";
@@ -58,6 +60,21 @@ hr.style-eight:after {
     position: relative;
     box-sizing: border-box;
     padding: 10px 20px;
+}
+#board {
+    height: 525px;
+    width: 350px;
+    margin-left: 75%;
+    margin-top: -270px;
+    background-image: url("../images/cork-board.jpg");
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
+}
+#top-board {
+    list-style: none;
+    margin-left: 20px;
+    padding-top: 20px;
+    font-family: "Luckiest Guy";
 }
 
 /* [ANIMATION] */
