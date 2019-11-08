@@ -14,33 +14,33 @@
 
     <style>
         .card {
-            height: 250px;
-            width: 300px;
+
         }
     </style>
 </head>
 <body>
-<h1 class="text-center">Weather Application</h1>
+<h1 class="text-center" id="toppy">Weather Application</h1>
+<h1 class="text-center" id="topper">Weather Application</h1>
 
 
 <div id="main">
 <ul style="display: flex; list-style-type: none" id="card-list">
     <li>
-        <div class="card-header" style="background-color: #0fb784;border-radius: 10px">
+        <div class="card-header" style="border-radius: 10px">
         <h4>Today's Weather</h4>
         </div>
         <div id="todayWeather"></div>
     </li>
 
     <li>
-        <div class="card-header" style="background-color: #0fb784;border-radius: 10px">
+        <div class="card-header" style="border-radius: 10px">
         <h4>Tomorrow's Weather</h4>
         </div>
         <div id="tmrwWeather"></div>
     </li>
 
     <li>
-        <div class="card-header" style="background-color: #0fb784; border-radius: 10px">
+        <div class="card-header" style="border-radius: 10px">
         <h4>Day After Tomorrow</h4>
         </div>
         <div id="dayAfterWeather"></div>
@@ -59,6 +59,8 @@
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script src="js/keys.js"></script>
 <script>
+
+// <!--    icons for the types of day-->
     var icons = [
         {
             summary: "clear-day",
@@ -103,7 +105,7 @@
 
     ];
 
-
+    // map centering on San antonio
     mapboxgl.accessToken = mapboxToken;
     var map = new mapboxgl.Map({
         container: 'map',
@@ -112,7 +114,7 @@
         center: [-98.4936, 29.4241]
         // pitch: 45
     });
-
+    //Marker
     var markerOptions = {
         color: "#27468f",
         draggable: true

@@ -1,12 +1,23 @@
 body {
     background-image: url("../images/all-weather.jpg");
 }
-h1 {
-    background: -webkit-linear-gradient(#0808ff, #fdff17);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#toppy {
+     background: -webkit-linear-gradient(#0808ff, #fdff17);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     /*text-shadow: white 1px 1px 1px;*/
+     font-family: 'Luckiest Guy',cursive;
+     font-size: 6em;
+ }
+#topper {
+    color: black;
+    position: absolute;
     font-family: 'Luckiest Guy',cursive;
     font-size: 6em;
+    z-index: -1;
+    margin-top: -120px;
+    margin-left: 230px;
+
 }
 h2 {
     background: -webkit-linear-gradient(#fdff17, #0808ff);
@@ -30,20 +41,25 @@ img {
     display: flex;
     justify-items: center;
     margin-left: 8.5em;
+    border: 3px solid lightskyblue;
+    border-radius: 10px;
 }
 #card-list {
     justify-content: space-evenly;
     margin-top: 5em;
 }
 .button {
-    margin-left: 6.4em;
+    margin-left: 6.7em;
 }
 .card {
+    height: 250px;
+    width: 300px;
     border: 3px solid steelblue;
     border-radius: 10px;
 }
 .card-header {
-    color: mistyrose;
+    color: navy;
+    background-color: #0fb784;
     border-radius: 10px;
 }
 #main {
