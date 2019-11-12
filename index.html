@@ -13,76 +13,112 @@
 
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark text-right nav-sm d-md-none d-lg-none">
-    <a class="navbar-brand" href="#" style="color: grey">Hey there! Thanks for dropping by!</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="streaming-player-ui.html" target="_blank">Designs?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="weather_map.html" target="_blank">Weather Application</a>
-            </li>
-        </ul>
+<div class="contaier-fluid">
+    <h1 class="text-center" id="header"></h1>
+    <hr class="style-eight">
+    <div class="text-center" style="margin-top: 20px">
+        <img src="images/profile-pic.jpg" alt="" id="box-img">
+        <h1>Web developer</h1>
+        <p>Designing things and helping people see their creative ideas <br> come to life is a passion of mine.</p>
     </div>
-</nav>
-<h1 class="text-center">Christopher Aguirre</h1>
-<hr class="style-eight">
-<div id="slider">
-    <div class="container">
-        <div class="slide">
-            <h3>About me</h3>
-            <p>
-                Hi there, My name is Christopher Aguirre. I'm an aspiring web developer with a business before pleasure
-                mindset.
-            </p>
+    <div id="accordion" class="text-center">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        About me
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <em>I like to mess around with things that involve creativity and one of my favorite things to do is take things that are broken and bring them back to life. I served in the U.S. Army for several years fixing weapons, so I know that the smallest details can make a world of a difference.</em>
+                </div>
+            </div>
         </div>
-        <div class="slide">
-            <p>
-                I was an enlisted soldier in the U.S Army for 4 years. Two of those years were spent fixing small arms
-                and artillery, so I know
-                that even the tiniest details matter when it comes to functioning and operational equipment.
-            </p>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Skillsets
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                   <em></em>
+                </div>
+            </div>
         </div>
-        <div class="slide">
-            <p>
-                The ladder half of my contract was in an office working minor things on the computer like spreadsheets
-                and inputting data into a data base for new personnel. Naturally, I took interest in the magic
-                that happens behind the screens and what made things tick in technology.
-            </p>
-        </div>
-        <div class="slide">
-            <h3>My Motivators</h3>
-            <p>
-
-            </p>
-        </div>
-        <div class="slide">
-            <h3>Slide 5</h3>
-            <p>
-                The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute.
-                This damp loses before the president. The slave elects the north inside an exciting salt.
-            </p>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Projects
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div id="board">
-    <ul id="top-board">
-        <li><a href="weather_map.html" target="_blank">Weather Application</a></li>
-        <li>You</li>
-        <li>There</li>
-    </ul>
-</div>
+    <hr class="style-eight">
+
+    <!--<div id="slider">-->
+    <!--    <div class="container">-->
+    <!--        <div class="slide">-->
+    <!--            <h3>About me</h3>-->
+    <!--            <p>-->
+    <!--                Hi there, My name is Christopher Aguirre. Thanks for stopping by to check out my web page. Here are a few things about myself.-->
+    <!--            </p>-->
+    <!--        </div>-->
+    <!--        <div class="slide">-->
+    <!--            <p>-->
+    <!--                I was an enlisted soldier in the U.S Army for 4 years. Two of those years were spent fixing weapons, so I know that even the tiniest details matter when it comes to functioning and operational equipment.-->
+    <!--            </p>-->
+    <!--        </div>-->
+    <!--        <div class="slide">-->
+    <!--            <p>-->
+    <!--                The ladder half of my contract was in an office working minor things on the computer like spreadsheets-->
+    <!--                and inputting data into a data base for new personnel. Naturally, I took interest in the magic-->
+    <!--                that happens behind the screens and what made things tick in technology.-->
+    <!--            </p>-->
+    <!--        </div>-->
+    <!--        <div class="slide">-->
+    <!--            <h3>My Motivators</h3>-->
+    <!--            <p>-->
+
+    <!--            </p>-->
+    <!--        </div>-->
+    <!--        <div class="slide">-->
+    <!--            <h3>Slide 5</h3>-->
+    <!--            <p>-->
+    <!--                The suspected book hums opposite the unacceptable urge. The warning goodbye searches the substitute.-->
+    <!--                This damp loses before the president. The slave elects the north inside an exciting salt.-->
+    <!--            </p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<div id="board">-->
+    <!--    <ul id="top-board">-->
+    <!--        <br>-->
+    <!--        <li><a href="weather_map.html" target="_blank">Check the Weather</a></li>-->
+    <!--        <br>-->
+    <!--        <li><a href="streaming-player-ui.html">Let me design <br> your page</a></li>-->
+    <!--        <br>-->
+    <!--        <li><a href="#">Take a look at <br> my resumé</a></li>-->
+    <!--    </ul>-->
+    <!--</div>-->
 
 
+    <footer id="info-bar">
+        <img src="images/github.png" alt="">
+        <img src="images/codeupsign.png" alt="">
+    </footer>
+</div>
 <!-- Main page content -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -95,6 +131,20 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 <!-- Your custom JS goes here -->
+<script>
+    var i = 0;
+    var txt = 'Christopher Aguirre'; /* The text */
+    var speed = 125; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("header").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter()
+</script>
 </body>
 </html>
 

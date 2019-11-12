@@ -7,6 +7,7 @@ body {
     background-image: url("../images/my-website.jpeg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Cinzel', serif;
 }
@@ -14,11 +15,11 @@ body {
 h1, h3 {
     font-family: 'Marck Script', cursive;
 }
-.slide {
-    float: left;
+h6 {
+    display: flex;
+    justify-content: space-evenly;
+    ;
 }
-
-
 hr.style-eight {
     overflow: visible; /* For IE */
     padding: 0;
@@ -38,6 +39,40 @@ hr.style-eight:after {
     padding: 0 0.25em;
     background: #aaa7ad;
     font-family: 'Zhi Mang Xing', cursive;
+}
+#accordion {
+    margin-left: 25%;
+    width: 50%;
+}
+#info-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    margin-top: 90%;
+    color: white;
+}
+#info-bar img {
+    height: 40px;
+    width: auto;
+
+}
+#box-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.card {
+    background-color: rgba(0,0,0,.4);
+}
+.btn-link {
+    color: #FCCC09;
+}
+.card-body {
+    color: white;
+}
+.slide {
+    float: left;
 }
 #slider,  #slider .slide{
     width: 500px;
@@ -61,6 +96,10 @@ hr.style-eight:after {
     box-sizing: border-box;
     padding: 10px 20px;
 }
+#sticky-note {
+    height: 100px;
+    width: 150px;
+}
 #board {
     height: 525px;
     width: 350px;
@@ -68,13 +107,20 @@ hr.style-eight:after {
     margin-top: -270px;
     background-image: url("../images/cork-board.jpg");
     background-size: contain;
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 }
 #top-board {
-    list-style: none;
+    list-style: square;
     margin-left: 20px;
     padding-top: 20px;
-    font-family: "Luckiest Guy";
+    font-family: "Luckiest Guy", cursive;
+    font-size: larger;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: darkred;
 }
 
 /* [ANIMATION] */
