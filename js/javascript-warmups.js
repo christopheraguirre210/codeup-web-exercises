@@ -428,7 +428,7 @@ function evenArray(arr) {
     var bucket = [];
     for(var i = 0;i < arr.length + 1; i++){
         if(i % 2 === 0){
-            bucket.push(i);
+            bucket.push(thisArray[i]);
         }
     }
     return bucket;

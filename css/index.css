@@ -71,6 +71,9 @@ hr.style-eight:after {
 .card-body {
     color: white;
 }
+.card-body>ul {
+    list-style: none;
+}
 .slide {
     float: left;
 }
