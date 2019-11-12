@@ -416,7 +416,31 @@ function randoBoolean(num){
 
 //return Boolean(Math.floor(Math.random() * 2));
 
-console.log(randoBoolean(randomNumber));
+// console.log(randoBoolean(randomNumber));
 
+
+//Given this array: [1,2,3,4,5,6,7,8] Write a loop that returns an array of all even numbers.
+
+var thisArray = [1,2,3,4,5,6,7,8];
+console.log(thisArray);
+
+function evenArray(arr) {
+    var bucket = [];
+    for(var i = 0;i < arr.length + 1; i++){
+        if(i % 2 === 0){
+            bucket.push(i);
+        }
+    }
+    return bucket;
+}
+
+// arr.forEach(function (num) {   forEach version of this answer
+//     if(num % 2 === 0){
+//         bucket.push(num)
+//     }
+//     return bucket;
+// });
+
+console.log(evenArray(thisArray));
 
 
