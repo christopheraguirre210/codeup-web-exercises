@@ -69,14 +69,25 @@
 //TO DO: using a for ... of loop, iterate over the array of instructors. If
 // the instructor is Sophie or David, console log the name.
 
-// const instructors = [
-//     'Daniel',
-//     'Vivian',
-//     'Sophie',
-//     'David',
-//     'Justin',
-//     'Fer',
-// ];
+const instructors = [
+    'Daniel',
+    'Vivian',
+    'Sophie',
+    'David',
+    'Justin',
+    'Fer',
+];
+
+const [a,b,c,d] = instructors;
+
+const europaInstructors = [a,b];
+const deimosInstructors = [c,d];
+
+console.log(a);
+console.log(b);
+
+console.log(europaInstructors);
+console.log(deimosInstructors);
 //
 // for(let instructor of instructors){
 //     if(instructor === 'Sophie' || instructor === 'David'){
@@ -138,8 +149,8 @@ const myGreeting = (greeting = "Good Morning",name = "Deimos") => {
 };
 //surround the return with backticks `` the key under the esc key.
 
-console.log(myGreeting());
-console.log(myGreeting("Hello", "Sophie"));
+// console.log(myGreeting());
+// console.log(myGreeting("Hello", "Sophie"));
 
 // /*********************************************
 //  *              Objects
@@ -163,37 +174,49 @@ const pals = {
     mouse: "Jerry"
 };
 
-let myDog = pals.dog;
-let myCat = pals.cat;
-let myMouse = pals.mouse;
+// let myDog = pals.dog;
+// let myCat = pals.cat;
+// let myMouse = pals.mouse;
 
 const {dog,cat,mouse} = pals;
 
-console.log(dog);
-console.log(cat);
-console.log(mouse);
+// console.log(dog);
+// console.log(cat);
+// console.log(mouse);
 
 // console.log(pals.mydog);
 // console.log(pals.cat);
 // console.log(pals.mouse);
 //
-// // TO DO TOGETHER: Use Object Destructuring to refactor
-//
-// const make = 'nissan';
-// const model= 'rogue';
-// const color = 'white';
-//
-// const myCar = {
-//     make,
-//     model,
-//     color
-// };
-//
-// const carInfo = (car) => {
-//     var make = car.make;
-//     var model = car.model;
-// };
-//
-// carInfo(myCar);
-//
-// //BONUS: Array Destructuring.
+
+
+// TO DO TOGETHER: Use Object Destructuring to refactor
+
+const make = 'nissan';
+const model= 'rogue';
+const color = 'white';
+
+const myCar = {
+    make,
+    model,
+    color
+};
+
+const yourCar = {
+    make: "Hyundai",
+    model: "Sonata",
+    color: "Pink"
+};
+
+// console.log(myCar.make);
+
+const carInfo = ({make,model}) => {
+    // let make = car.make;
+    // let model = car.model;
+    console.log(make, model);
+};
+carInfo(myCar);
+carInfo(yourCar);
+
+//BONUS: Array Destructuring.
+
