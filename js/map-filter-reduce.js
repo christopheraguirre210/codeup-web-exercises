@@ -49,7 +49,6 @@ const multipleLanguages = users.filter(function (obj) {
 console.log(multipleLanguages);
 
 //Exercise #3
-
 let emails = [];
 
 users.forEach(user => emails.push(user.email));
@@ -77,13 +76,18 @@ let longestEmail = emails.reduce((longest,email) => {
 console.log(longestEmail);
 
 //Exercise #6
-
 let instructors = users.reduce((str, user) => {
     return `${str}, ${user.name}`
 }, "Your instructors are: david, sophie, vivian, trant") + ".";
 
 console.log(instructors);
 
-// users.forEach((user => names.push(user.name)));
-// console.log(names);
+//Bonus Exercise
+
+let listOfLanguages = Array.from(users.reduce((accumulator, user) => {
+    user.languages.forEach(language => accumulator.add(language));
+    return accumulator;
+}, new Set()));
+
+console.log(listOfLanguages);
 
