@@ -95,7 +95,7 @@ const fruitsAndVeggies = [
 let fruits = fruitsAndVeggies.filter(function (fruit) {
     return fruit.type === "fruit";
 });
-// console.log(fruits);
+console.log(fruits);
 
 // TO DO: filter through the array of objects and return all vegetable type
 // objects.
@@ -241,6 +241,12 @@ var hamsters = [
     }
 ];
 
-const unique = [...new Set(hamsters.map(hamster => hamster.fur))];
+const furColors = [...new Set(hamsters.map(hamster => hamster.fur))];
 
-console.log(unique);
+// console.log(furColors.toString());
+
+function uniqueFur(items){
+    return items;
+}
+
+console.log(uniqueFur(furColors));
