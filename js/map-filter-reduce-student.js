@@ -21,7 +21,7 @@ let newArray = numbers.map(function (num) {
 
 //or let newArray = numbers.map(num => num * 3);
 
-console.log(newArray);
+// console.log(newArray);
 
 //TO DO TOGETHER: Let's map through the array of number and add 1 to each
 // element. Console log the new copy of the array.
@@ -31,7 +31,7 @@ console.log(newArray);
 
 let thisArray = newArray.map(num => num * 3);
 
-console.log(thisArray);
+// console.log(thisArray);
 
 
 /*********************************************
@@ -48,7 +48,7 @@ const binary = [1,1,1,1,0,0,1,1,1,1];
 
 let ones = binary.filter(num => num == true);
 
-console.log(ones);
+// console.log(ones);
 
 // TO DO: filter through binary again and this time, return all the false
 // values.
@@ -59,7 +59,7 @@ console.log(ones);
 
 let zeros = binary.filter(num => num == false);
 
-console.log(zeros);
+// console.log(zeros);
 
 const fruitsAndVeggies = [
     {
@@ -95,7 +95,7 @@ const fruitsAndVeggies = [
 let fruits = fruitsAndVeggies.filter(function (fruit) {
     return fruit.type === "fruit";
 });
-console.log(fruits);
+// console.log(fruits);
 
 // TO DO: filter through the array of objects and return all vegetable type
 // objects.
@@ -104,7 +104,7 @@ let vegetables = fruitsAndVeggies.filter(function (vegetable) {
     return vegetable.type === "vegetable";
 });
 
-console.log(vegetables);
+// console.log(vegetables);
 
 /*********************************************
  *              .reduce
@@ -129,7 +129,7 @@ const start = 0;
 
 const otherSum = numbersArray.reduce(add,start);
 
-console.log(otherSum);
+// console.log(otherSum);
 
 // console.log(sum);
 
@@ -142,7 +142,7 @@ console.log(otherSum);
 
 const difference = numbersArray.reduce((total, currentNumber) => total - currentNumber, 100);
 
-console.log(difference);
+// console.log(difference);
 
 var shoppingCarts = [
     {
@@ -174,16 +174,11 @@ const totalApples = shoppingCarts.reduce(function (total,cart) {
     return total + cart.apples;
 },0);
 
-console.log(totalApples);
+// console.log(totalApples);
 
 // TO DO TOGETHER: let's use .reduce to return an object that has properties
 // representing total values for each fruit.
 
-// const totalFruits = shoppingCarts.reduce (function (total,cart) {
-//     return total + cart.;
-// },0);
-//
-// console.log(totalFruits);
 
 const colors = ['red','orange','red','blue','blue','green','red'];
 
@@ -198,8 +193,9 @@ const colorCount = colors.reduce(function (colorCount, color) {
     }
     return colorCount;
 },{});
+//^^ is the initial empty object, whatever is placed there is where the result will show up i.e a string, an array or like here, an object//
 
-console.log(colorCount);
+// console.log(colorCount);
 
 
 const lyrics = ['we','all','live','in','a','yellow','submarine'];
@@ -208,7 +204,7 @@ const lyrics = ['we','all','live','in','a','yellow','submarine'];
 const oneLine = lyrics.reduce(function (currentString, word) {
     return `${currentString} ${word}`
 },"");
-console.log(oneLine);
+// console.log(oneLine);
 
 // Bonus: Create an Array of all the unique fur colors!
 var hamsters = [
@@ -235,7 +231,7 @@ var hamsters = [
         heightInMM: 120,
         fur: ['brown', 'white'],
         gender: "male",
-        dateOfBirth: "Spetember 21"
+        dateOfBirth: "September 21"
     } , {
         name: "Snoozer",
         heightInMM: 85,
@@ -245,3 +241,6 @@ var hamsters = [
     }
 ];
 
+const unique = [...new Set(hamsters.map(hamster => hamster.fur))];
+
+console.log(unique);
