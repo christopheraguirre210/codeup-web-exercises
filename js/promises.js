@@ -11,11 +11,6 @@ wait(3000).then(() =>console.log("You'll see this message after 3 seconds."));
 
 
 
-// function gitHubUsername() {
-//     return fetch('https://api.github.com/users', {headers: {'Authorization': 'token' + gitHubToken}})
-
-// }
-
 function gitHubUserInfo(userName) {
 
     fetch(`https://api.github.com/users/${userName}/events/public`, {headers: {"Authorization": `token ${gitHubToken}`}})
@@ -33,3 +28,12 @@ function gitHubUserInfo(userName) {
 }
 
 gitHubUserInfo("christopheraguirre210");
+
+// const lastCommit = (username) => {
+//     fetch(`https://api.github.com/users/${username}/events/`, {headers: {"Authorization": `token ${gitHubToken}`}})
+//         .then(response => response.json()).then(data => data.find(event => event.type === "PushEvent"))
+//         .then(event => event.created_at)
+//         .then(date => console.log(date));
+//
+// };
+// lastCommit("christopheraguirre210");

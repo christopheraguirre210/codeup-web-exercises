@@ -389,7 +389,7 @@ function numToString(num){
     }
 }
 
-var randomNumber = Math.floor(Math.random() * 2) + 1;
+var randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // console.log(numToString(randomNumber));
 //
@@ -443,4 +443,17 @@ function evenArray(arr) {
 
 console.log(evenArray(thisArray));
 
+const promiseEven = num => {
+    return new Promise((resolve, reject) => {
+        if(num % 2 === 0){
+            resolve(`${num} is an even number.`);
+        }else {
+            reject(`${num} is not even, Boss.`);
+        }
+    })
+};
+
+promiseEven(randomNumber)
+    .then(message => console.log(message))
+    .catch(message => console.log(message));
 
