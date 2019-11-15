@@ -421,18 +421,18 @@ function randoBoolean(num){
 
 //Given this array: [1,2,3,4,5,6,7,8] Write a loop that returns an array of all even numbers.
 
-var thisArray = [1,2,3,4,5,6,7,8];
-console.log(thisArray);
-
-function evenArray(arr) {
-    var bucket = [];
-    for(var i = 0;i < arr.length + 1; i++){
-        if(i % 2 === 0){
-            bucket.push(thisArray[i]);
-        }
-    }
-    return bucket;
-}
+// var thisArray = [1,2,3,4,5,6,7,8];
+// console.log(thisArray);
+//
+// function evenArray(arr) {
+//     var bucket = [];
+//     for(var i = 0;i < arr.length + 1; i++){
+//         if(i % 2 === 0){
+//             bucket.push(thisArray[i]);
+//         }
+//     }
+//     return bucket;
+// }
 
 // arr.forEach(function (num) {   forEach version of this answer
 //     if(num % 2 === 0){
@@ -441,19 +441,32 @@ function evenArray(arr) {
 //     return bucket;
 // });
 
-console.log(evenArray(thisArray));
+// console.log(evenArray(thisArray));
+//
+// const promiseEven = num => {
+//     return new Promise((resolve, reject) => {
+//         if(num % 2 === 0){
+//             resolve(`${num} is an even number.`);
+//         }else {
+//             reject(`${num} is not even, Boss.`);
+//         }
+//     })
+// };
+//
+// promiseEven(randomNumber)
+//     .then(message => console.log(message))
+//     .catch(message => console.log(message));
 
-const promiseEven = num => {
-    return new Promise((resolve, reject) => {
-        if(num % 2 === 0){
-            resolve(`${num} is an even number.`);
-        }else {
-            reject(`${num} is not even, Boss.`);
-        }
+//write a function that returns a promise. It should resolve with a message of "Hello."
+//Write to the HTML document an h1 that has the text of the resolve
+
+const anotherPromise = () => {
+    return new Promise((resolve) => {
+        resolve("Hello");
     })
 };
 
-promiseEven(randomNumber)
-    .then(message => console.log(message))
-    .catch(message => console.log(message));
+anotherPromise().then(message => {
+    document.getElementsByTagName('body')[0].innerHTML += `<h1>${message}</h1>`
+});
 
