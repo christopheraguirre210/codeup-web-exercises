@@ -470,3 +470,9 @@ anotherPromise().then(message => {
     document.getElementsByTagName('body')[0].innerHTML += `<h1>${message}</h1>`
 });
 
+function piPointSix(num) {
+    return parseFloat(Math.PI.toFixed(6));
+}
+
+console.log(piPointSix());
+
