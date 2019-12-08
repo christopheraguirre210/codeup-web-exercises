@@ -1,0 +1,22 @@
+*{
+    margin:0;
+}
+body{
+    display:flex;
+    justify-content: center;
+}
+img{
+    height:200px;
+    width:200px;
+    padding-left: 4em;
+}
+h1{
+    font-size: 70px;
+    font-family: 'Bangers', cursive;
+
+}
+.card{
+    justify-items: center;
+    margin-top:20%;
+    margin-right:25%;
+}
