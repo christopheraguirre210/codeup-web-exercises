@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Practice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/christmas-break.css">
+</head>
+<body>
+<!--<div class="container-fluid">-->
+<!--    <h1 class="text-center" id="header"></h1>-->
+<!--</div>-->
+<div>
+    <h1 class="text-center jumbotron jumbotron-fluid" id="header"></h1>
+</div>
+
+
+
+
+
+
+<script>
+    var i = 0;
+    var txt = 'Merry Christmas!'; /* The text */
+    var speed = 125; /* The speed/duration of the effect in milliseconds */
+
+    // function typeWriter() {
+    //     if (i < txt.length) {
+    //         document.getElementById("header").innerHTML += txt.charAt(i);
+    //         i++;
+    //         setTimeout(typeWriter, speed);
+    //     }
+    // }
+    // typeWriter();
+
+    var chars = 'Merry Christmas!!!'.split('');
+    var container = document.getElementById("header");
+
+    var i = 0;
+    setInterval(function () {
+        if (i < chars.length) {
+            container.innerHTML += chars[i++];
+        } else {
+            i = 0;
+            container.innerHTML = "";
+        }
+    }, 300);
+</script>
+</body>
+</html>

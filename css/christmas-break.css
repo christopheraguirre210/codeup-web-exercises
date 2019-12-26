@@ -1,0 +1,7 @@
+#header{
+    color: red;
+}
+.jumbotron-fluid {
+    background-image: url("../images/x-mas-header.jpg");
+    background-size: cover;
+}
