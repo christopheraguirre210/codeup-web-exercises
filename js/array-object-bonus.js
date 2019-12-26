@@ -37,10 +37,13 @@ var dogs = [
 
 console.log(dogs);
 
+
 function getOlder(arr,index){
     dogs.forEach(function (dog,index) {
         dogs[index].age += 1;
     })
+
+    console.log(dogs);
 }
 
 //Write a function, washCars() that takes in a array of car objects and sets the boolean properties of isDirty to false.
@@ -66,17 +69,24 @@ var cars = [
     }
 ];
 
+// console.log(cars);
+//
+// function washCars(arr){
+//     cars.forEach(function (car,index) {
+//         cars[index].isDirty = false;
+//     })
+    console.log(cars);
+
+// }
+
 console.log(cars);
 
-function washCars(arr){
-    cars.forEach(function (car,index) {
-        cars[index].isDirty = false;
-    })
-}
+
 
 //Write a function, adminList() that takes in an array of user objects and returns a count of all admins based on the isAdmin property. Refactor to return an array of admin-only user emails. Refactor again to return an array of user objects that are admins.
 
-var admins = [
+
+var credentials = [
     {
         isAdmin: true,
         email: 'user1@email.com'
@@ -91,17 +101,58 @@ var admins = [
     }
 ];
 
-console.log(admins);
+console.log(credentials);
 
-function adminList(admins){
-    var adminArray = [];
-    admins.forEach(function(admin,index) {
-        if (admins[index].isAdmin === true){
-             adminArray.push(admin);
+
+function adminCount(credentials) {
+    var admins = [];
+    credentials.forEach(function(credential,index) {
+        if (credentials[index].isAdmin === true) {
+            admins.unshift(credential.email);
         }
     });
-    console.log(adminArray);
+    console.log(admins);
 }
+
+// var admins = [
+//     {
+//         isAdmin: true,
+//         email: 'user1@email.com'
+//     },
+//     {
+//         isAdmin: true,
+//         email: 'user2@email.com'
+//     },
+//     {
+//         isAdmin: false,
+//         email: 'user3@email.com'
+//     }
+// ];
+//
+// console.log(admins);
+//
+//
+// function adminCount(admins) {
+//     var adminsList = [];
+//     admins.forEach(function(admins,index) {
+//         if (admins[index].isAdmin === true) {
+//             adminsList.unshift(admins.email);
+//         }
+//     });
+//     console.log(adminsList);
+// }
+
+// console.log(admins);
+//
+// function adminList(admins){
+//     var adminArray = [];
+//     admins.forEach(function(admin,index) {
+//         if (admins[index].isAdmin === true){
+//              adminArray.push(admin);
+//         }
+//     });
+//     console.log(adminArray);
+// }
 
 //to change from an array to objects above just remove .email and just return admin!!!
 
