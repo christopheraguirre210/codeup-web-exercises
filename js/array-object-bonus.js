@@ -69,15 +69,15 @@ var cars = [
     }
 ];
 
-// console.log(cars);
-//
-// function washCars(arr){
-//     cars.forEach(function (car,index) {
-//         cars[index].isDirty = false;
-//     })
+console.log(cars);
+
+function washCars(arr){
+    cars.forEach(function (car,index) {
+        cars[index].isDirty = false;
+    });
     console.log(cars);
 
-// }
+}
 
 console.log(cars);
 
@@ -114,49 +114,37 @@ function adminCount(credentials) {
     console.log(admins);
 }
 
-// var admins = [
-//     {
-//         isAdmin: true,
-//         email: 'user1@email.com'
-//     },
-//     {
-//         isAdmin: true,
-//         email: 'user2@email.com'
-//     },
-//     {
-//         isAdmin: false,
-//         email: 'user3@email.com'
-//     }
-// ];
-//
-// console.log(admins);
-//
-//
-// function adminCount(admins) {
-//     var adminsList = [];
-//     admins.forEach(function(admins,index) {
-//         if (admins[index].isAdmin === true) {
-//             adminsList.unshift(admins.email);
-//         }
-//     });
-//     console.log(adminsList);
-// }
+var admins = [
+    {
+        isAdmin: true,
+        email: 'user1@email.com'
+    },
+    {
+        isAdmin: true,
+        email: 'user2@email.com'
+    },
+    {
+        isAdmin: false,
+        email: 'user3@email.com'
+    }
+];
 
-// console.log(admins);
-//
-// function adminList(admins){
-//     var adminArray = [];
-//     admins.forEach(function(admin,index) {
-//         if (admins[index].isAdmin === true){
-//              adminArray.push(admin);
-//         }
-//     });
-//     console.log(adminArray);
-// }
+console.log(admins);
+
+
+function adminCount(admins) {
+    var adminsList = [];
+    admins.forEach(function(admins,index) {
+        if (admins[index].isAdmin === true) {
+            adminsList.unshift(admins.email);
+        }
+    });
+    console.log(adminsList);
+}
+
 
 //to change from an array to objects above just remove .email and just return admin!!!
 
-//Create a function, makeSandwichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
 
 
 
