@@ -3,6 +3,30 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+a{
+    color:red;
+    font-family: 'Girassol', cursive;
+    font-size: large;
+}
 #header{
     color: red;
+    background-color: darkgreen;
+    font-family: 'Girassol', cursive;
+
+}
+#song-list{
+    border:2px dotted white;
+    width: 20em;
+    background-image: url("../images/x-mas-header2.jpg");
+    background-position: center;
+}
+#song-input{
+    background-color: white;
+    color:red;
+    font-family: 'Girassol', cursive;
+    margin-left: 40px;
+    width: 15em;
+}
+#song-submit{
+    margin-left: 130px;
 }

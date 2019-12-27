@@ -9,8 +9,25 @@
 </head>
 <body>
 <div>
-    <h1 class="text-center" id="header"></h1>
+<h1 class="text-center" id="header"> Merry Christmas!!!</h1>
 </div>
+<div id="song-list">
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=aAkMkVFwAoo" target="_blank">All I Want For Christmas Is You</a></li>
+        <li><a href="https://www.youtube.com/watch?v=z3sc2mGsAXM" target="_blank">Last Christmas</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dhzxQCTCI3E" target="_blank">Chestnuts Roasting on an Open Fire</a></li>
+    </ul>
+</div>
+<input type="textarea" id="song-input"><br>
+<input type="submit" id="song-submit">
+<ul id="list">
+    <li>
+        <a href="www.google.it">link</a>
+    </li>
+</ul>
+<button id="add">Add link</button>
+
+
 
 
 
@@ -18,23 +35,38 @@
 
 
 <script>
+
+    window.onload = init;
+    function init(){
+        document.getElementById('song-submit').onclick = add;
+    }
+    function add(){
+        var el = document.getElementById('song-list');
+        var node = document.createElement("li");
+        var link = document.createElement("a");
+        link.setAttribute('href', 'www.google.it');
+        link.innerHTML = "link";
+        node.appendChild(link);
+        el.appendChild(node);
+    }
+
     var i = 0;
     var txt = 'Merry Christmas!'; /* The text */
     var speed = 125; /* The speed/duration of the effect in milliseconds */
 
 
-    var chars = 'Merry Christmas!!!'.split('');
-    var container = document.getElementById("header");
-
-    var i = 0;
-    setInterval(function () {
-        if (i < chars.length) {
-            container.innerHTML += chars[i++];
-        } else {
-            i = 0;
-            container.innerHTML = "";
-        }
-    }, 300);
+    // var chars = 'Merry Christmas!!!'.split('');
+    // var container = document.getElementById("header");
+    //
+    // var i = 0;
+    // setInterval(function () {
+    //     if (i < chars.length) {
+    //         container.innerHTML += chars[i++];
+    //     } else {
+    //         i = 0;
+    //         container.innerHTML = "";
+    //     }
+    // }, 300);
 </script>
 </body>
 </html>
