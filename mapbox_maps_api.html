@@ -29,7 +29,7 @@
     mapboxgl.accessToken = mapboxToken;
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/satellite-v9',
+        style: 'mapbox://styles/mapbox/streets-v9',
         zoom: 15,
         center: [-98.485352, 29.423618]
         // pitch: 45
@@ -39,18 +39,6 @@
         color: "#038f07",
         draggable: true
     };
-
-    // var marker = new mapboxgl.Marker(markerOptions)
-    //     .setLngLat([])
-    //     .addTo(map);
-    //
-    // var marker2 = new mapboxgl.Marker(markerOptions)
-    //     .setLngLat([-98.49271, 29.425338])
-    //     .addTo(map);
-    //
-    // var marker3 = new mapboxgl.Marker(markerOptions)
-    //     .setLngLat([-98.485352, 29.423618])
-    //     .addTo(map);
 
     function geocode(search, token) {
         var baseUrl = 'https://api.mapbox.com';
@@ -64,40 +52,6 @@
             });
     }
 
-    // geocode("1226 E Houston St, San Antonio, TX 78205", mapboxToken).then(function (result) {
-    //
-    // });
-    // geocode("110 Soledad St, San Antonio, TX 78205", mapboxToken).then(function (result) {
-    //     console.log(result);
-    //     // map.setCenter(result);
-    //     // map.setZoom(15);
-    // });
-    // geocode("849 E Commerce St, San Antonio, TX 78205", mapboxToken).then(function (result) {
-    //     console.log(result);
-    //     // map.setCenter(result);
-    //     // map.setZoom(15);
-    // });
-    //
-    // var spaghettiPopup = new mapboxgl.Popup()
-    //     .setLngLat([-98.478223, 29.424707])
-    //     .setHTML("<em>Spaghetti Warehouse!!</em>")
-    //     .addTo(map);
-    //
-    // var manhattanPopup = new mapboxgl.Popup()
-    //     .setLngLat([-98.49271, 29.425338])
-    //     .setHTML("<em>Mexican Manhattan!!</em>")
-    //     .addTo(map);
-    //
-    // var mallPopup = new mapboxgl.Popup()
-    //     .setLngLat([-98.485352, 29.423618])
-    //     .setHTML("<em>RiverCenter Mall!!</em>")
-    //     .addTo(map);
-    //
-    // marker.setPopup(spaghettiPopup,manhattanPopup,mallPopup);
-    //
-    // marker2.setPopup(manhattanPopup);
-    //
-    // marker3.setPopup(mallPopup);
 
     var restaurants = [
         {
@@ -136,21 +90,7 @@
     });
 
 
-
-
-
-
-    // geocode(" ", mapboxToken).then(function (result) {
-    //     console.log(result);
-    //     // map.setCenter(result);
-    //     // map.setZoom(15);
-    // });
-
 </script>
-<!--<script src="js/mapbox-geocoder-utils.js"></script>-->
-<!--<script src="js/mapbox-api-lec.js"></script>-->
-
-<!-- Custom JS -->
 
 </body>
 </html>

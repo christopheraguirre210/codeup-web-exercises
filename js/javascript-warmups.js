@@ -207,21 +207,21 @@
 // console.log(createPersonObject());
 //
 //
-// function fizzBuzz(num){
-//     for(var i = 1; i <= num; i++){
-//         if(i % 15 === 0){
-//             console.log("fizzbuzz");
-//         }else if(i % 5 === 0){
-//             console.log("buzz");
-//         }else if(i % 3 === 0){
-//             console.log("fizz");
-//         }else{
-//             console.log(i);
-//         }
-//     }
-// }
-//
-// console.log(fizzBuzz(100));
+function fizzBuzz(num){
+for(var i = 1; i <= num; i++){
+    if(i % 15 === 0){
+        console.log("fizzbuzz");
+    }else if(i % 5 === 0){
+        console.log("buzz");
+    }else if(i % 3 === 0){
+        console.log("fizz");
+    }else{
+        console.log(i);
+    }
+}
+}
+
+console.log(fizzBuzz(100));
 
 //write a function that will return the number 5, but only when passed the string "five"
 //
@@ -308,49 +308,49 @@
 //     return newArray;
 // }
 
-var hamsters = [
-    {
-        name: "Hamtaro",
-        heightInMM: 86,
-        fur: ['orange', 'white'],
-        gender: "male",
-        dateOfBirth: "August 6"
-    } , {
-        name: "Bijou",
-        heightInMM: 75,
-        fur: ['white'],
-        gender: "female",
-        dateOfBirth: "July 10"
-    } , {
-        name: "Oxnard",
-        heightInMM: 100,
-        fur: ['grey', 'white'],
-        gender: "male",
-        dateOfBirth: "May 3"
-    } , {
-        name: "Boss",
-        heightInMM: 120,
-        fur: ['brown', 'white'],
-        gender: "male",
-        dateOfBirth: "Spetember 21"
-    } , {
-        name: "Snoozer",
-        heightInMM: 85,
-        fur: ['brown', 'white', "pink"],
-        gender: "male",
-        dateOfBirth: "January 14"
-    }
-    ];
+// var hamsters = [
+//     {
+//         name: "Hamtaro",
+//         heightInMM: 86,
+//         fur: ['orange', 'white'],
+//         gender: "male",
+//         dateOfBirth: "August 6"
+//     } , {
+//         name: "Bijou",
+//         heightInMM: 75,
+//         fur: ['white'],
+//         gender: "female",
+//         dateOfBirth: "July 10"
+//     } , {
+//         name: "Oxnard",
+//         heightInMM: 100,
+//         fur: ['grey', 'white'],
+//         gender: "male",
+//         dateOfBirth: "May 3"
+//     } , {
+//         name: "Boss",
+//         heightInMM: 120,
+//         fur: ['brown', 'white'],
+//         gender: "male",
+//         dateOfBirth: "Spetember 21"
+//     } , {
+//         name: "Snoozer",
+//         heightInMM: 85,
+//         fur: ['brown', 'white', "pink"],
+//         gender: "male",
+//         dateOfBirth: "January 14"
+//     }
+//     ];
 
 //write a javascript function that will return an array of hamster objects sorted by height in ascending order.
 
-function hamsterOrder(hamster){
-    return  hamster.sort(function (a,b) {
-        return a.heightInMM - b.heightInMM;
-    });
-}
-
-console.log(hamsterOrder(hamsters));
+// function hamsterOrder(hamster){
+//     return  hamster.sort(function (a,b) {
+//         return a.heightInMM - b.heightInMM;
+//     });
+// }
+//
+// console.log(hamsterOrder(hamsters));
 
 
 //List out three of your favorite web applications. Explain why.
@@ -362,34 +362,34 @@ console.log(hamsterOrder(hamsters));
 
 //write a javascript function that will take in the whole numbers 1 - 10, and return the number spelled out as a string.(i.e. 1 returns 'one').
 
-function numToString(num){
-    switch (num){
-        case 1:
-            return 'one';
-        case 2:
-            return 'two';
-        case 3:
-            return 'three';
-        case 4:
-            return 'four';
-        case 5:
-            return 'five';
-        case 6:
-            return 'six';
-        case 7:
-            return 'seven';
-        case 8:
-            return 'eight';
-        case 9:
-            return 'nine';
-        case 10:
-            return 'ten';
-        default:
-            return false;
-    }
-}
-
-var randomNumber = Math.floor(Math.random() * 10) + 1;
+// function numToString(num){
+//     switch (num){
+//         case 1:
+//             return 'one';
+//         case 2:
+//             return 'two';
+//         case 3:
+//             return 'three';
+//         case 4:
+//             return 'four';
+//         case 5:
+//             return 'five';
+//         case 6:
+//             return 'six';
+//         case 7:
+//             return 'seven';
+//         case 8:
+//             return 'eight';
+//         case 9:
+//             return 'nine';
+//         case 10:
+//             return 'ten';
+//         default:
+//             return false;
+//     }
+// }
+//
+// var randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // console.log(numToString(randomNumber));
 //
@@ -410,9 +410,9 @@ var randomNumber = Math.floor(Math.random() * 10) + 1;
 
 //write a javascript function that returns a random boolean
 
-function randoBoolean(num){
-    return num === 1;
-}
+// function randoBoolean(num){
+//     return num === 1;
+// }
 
 //return Boolean(Math.floor(Math.random() * 2));
 
@@ -460,19 +460,19 @@ function randoBoolean(num){
 //write a function that returns a promise. It should resolve with a message of "Hello."
 //Write to the HTML document an h1 that has the text of the resolve
 
-const anotherPromise = () => {
-    return new Promise((resolve) => {
-        resolve("Hello");
-    })
-};
-
-anotherPromise().then(message => {
-    document.getElementsByTagName('body')[0].innerHTML += `<h1>${message}</h1>`
-});
-
-function piPointSix(num) {
-    return parseFloat(Math.PI.toFixed(6));
-}
-
-console.log(piPointSix());
+// const anotherPromise = () => {
+//     return new Promise((resolve) => {
+//         resolve("Hello");
+//     })
+// };
+//
+// anotherPromise().then(message => {
+//     document.getElementsByTagName('body')[0].innerHTML += `<h1>${message}</h1>`
+// });
+//
+// function piPointSix(num) {
+//     return parseFloat(Math.PI.toFixed(6));
+// }
+//
+// console.log(piPointSix());
 
