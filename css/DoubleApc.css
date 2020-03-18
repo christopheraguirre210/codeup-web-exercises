@@ -2,8 +2,6 @@
     margin:0;
 }
 body{
-    display:flex;
-    justify-content: center;
     background: rgb(36,0,1);
     background: linear-gradient(90deg, rgba(36,0,1,1) 0%, rgba(85,8,10,1) 35%, rgba(255,0,7,1) 100%);
 }
@@ -11,13 +9,14 @@ body{
 img{
     height:150px;
     width:150px;
-    padding-left: 6em;
 }
 h1{
+    color: black;
     font-size: 70px;
     font-family: 'Bangers', cursive;
 
 }
-.card{
-    justify-content: center;
+.header{
+    display: flex;
+    align-items: center;
 }
