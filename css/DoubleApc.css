@@ -4,11 +4,14 @@
 body{
     display:flex;
     justify-content: center;
+    background: rgb(36,0,1);
+    background: linear-gradient(90deg, rgba(36,0,1,1) 0%, rgba(85,8,10,1) 35%, rgba(255,0,7,1) 100%);
 }
+
 img{
-    height:200px;
-    width:200px;
-    padding-left: 4em;
+    height:150px;
+    width:150px;
+    padding-left: 6em;
 }
 h1{
     font-size: 70px;
@@ -16,7 +19,5 @@ h1{
 
 }
 .card{
-    justify-items: center;
-    margin-top:20%;
-    margin-right:25%;
+    justify-content: center;
 }
